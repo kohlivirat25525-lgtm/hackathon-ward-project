@@ -1,0 +1,6 @@
+{
+  "name": "WARDWISE — Civic Operations & Accountability Platform",
+  "description": "Municipal civic issue reporting, algorithmic ward routing, enforced SLA escalation, and public transparency platform with a private administrative control room.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

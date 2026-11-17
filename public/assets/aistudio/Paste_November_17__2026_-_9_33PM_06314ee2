@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container-highest": "#e3e3dd",
+          "on-secondary-fixed-variant": "#3e475c",
+          "on-tertiary-container": "#5f78ff",
+          "error": "#ba1a1a",
+          "primary-container": "#1a1c1e",
+          "on-primary": "#ffffff",
+          "tertiary-container": "#00105b",
+          "surface-container": "#eeeee8",
+          "tertiary-fixed": "#dee0ff",
+          "primary": "#000000",
+          "inverse-on-surface": "#f1f1eb",
+          "inverse-surface": "#2f312d",
+          "on-primary-fixed-variant": "#454749",
+          "surface-container-low": "#f4f4ee",
+          "on-secondary-fixed": "#121b2e",
+          "tertiary": "#000000",
+          "tertiary-fixed-dim": "#bac3ff",
+          "surface-variant": "#e3e3dd",
+          "error-container": "#ffdad6",
+          "primary-fixed": "#e2e2e5",
+          "secondary": "#555e74",
+          "outline-variant": "#c5c6ca",
+          "on-tertiary-fixed": "#00105b",
+          "surface-tint": "#5d5e61",
+          "surface": "#fafaf3",
+          "on-tertiary-fixed-variant": "#1133bf",
+          "on-background": "#1a1c19",
+          "on-tertiary": "#ffffff",
+          "background": "#fafaf3",
+          "on-error": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary": "#ffffff",
+          "secondary-container": "#d9e2fd",
+          "primary-fixed-dim": "#c6c6c9",
+          "on-surface": "#1a1c19",
+          "on-error-container": "#93000a",
+          "outline": "#75777a",
+          "surface-bright": "#fafaf3",
+          "on-surface-variant": "#44474a",
+          "on-primary-fixed": "#1a1c1e",
+          "on-primary-container": "#838486",
+          "inverse-primary": "#c6c6c9",
+          "secondary-fixed": "#d9e2fd",
+          "secondary-fixed-dim": "#bdc6e0",
+          "surface-dim": "#dadad4",
+          "on-secondary-container": "#5b647b",
+          "surface-container-high": "#e9e8e2"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin": "1.25rem",
+          "space-lg": "1.5rem",
+          "space-md": "1rem",
+          "space-sm": "0.5rem",
+          "space-3xl": "6rem",
+          "space-2xl": "4rem",
+          "margin-desktop": "4.5rem",
+          "space-xs": "0.25rem",
+          "space-xl": "2.5rem",
+          "margin-tablet": "2.5rem",
+          "gutter": "1.5rem",
+          "gutter-desktop": "2.5rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "headline-sm": [
+            "Manrope"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Manrope"
+          ],
+          "body-sm": [
+            "Manrope"
+          ],
+          "label-sm": [
+            "Manrope"
+          ],
+          "display-mobile": [
+            "Playfair Display"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Manrope"
+          ],
+          "label-md": [
+            "Manrope"
+          ],
+          "title-md": [
+            "Manrope"
+          ],
+          "display": [
+            "Playfair Display"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-mobile": [
+            "38px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "display": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 py-space-sm px-margin md:px-margin-tablet lg:px-margin-desktop"><div class="h-20 max-w-[1380px] mx-auto px-space-lg flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-xl rounded-full shadow-[0_8px_30px_rgba(21,23,25,0.05)]"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center"><svg class="w-5 h-5 text-on-primary" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24"><path d="M3 9h18M3 15h18M9 3v18M15 3v18" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><a class="flex flex-col" data-path="home" href="#"><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-bold">WARDWISE</span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Civic Intelligence</span></a></div><nav class="hidden lg:flex items-center gap-1 p-1 rounded-full bg-surface-container-low" data-active-classes="bg-surface-container text-on-surface font-title-md"><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="platform" href="#">Platform</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="how-it-works" href="#">How It Works</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="live-city" href="#">Live City</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="transparency" href="#">Transparency</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-block font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" data-path="login" href="#">Sign In</a><a class="inline-flex items-center justify-center px-space-lg py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all" data-path="report-issue" href="#">Report an Issue</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-280px)]"><div class="flex flex-col w-full">
+<!-- ========================================== -->
+<!-- 01. CINEMATIC HERO SECTION                 -->
+<!-- ========================================== -->
+<section class="relative w-full overflow-hidden bg-surface pt-6 pb-20">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<!-- Top Meta / Monograph Row -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start pb-8">
+<div class="lg:col-span-4 flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">01 // Intelligent Civic Operations</span>
+</div>
+<div class="lg:col-span-8 flex justify-start lg:justify-end">
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl leading-relaxed text-left lg:text-right">
+            Cities deserve more than passive complaint boxes. They deserve living systems where every civic grievance is mapped in real time, assignees are held to public account, and resolutions are verified.
+          </p>
+</div>
+</div>
+<!-- Hero Main Title Layer -->
+<div class="relative mt-2 mb-10">
+<h1 class="font-headline-lg lg:font-display text-4xl sm:text-5xl lg:text-[76px] lg:leading-[84px] tracking-tight text-primary font-normal">
+          Better cities begin with <br class="hidden sm:inline"/>
+<span class="font-headline-lg font-normal italic text-secondary">better accountability.</span>
+</h1>
+</div>
+<!-- Action Row -->
+<div class="flex flex-wrap items-center gap-space-md mb-12">
+<a class="inline-flex items-center gap-space-sm px-7 py-3.5 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-md group" data-path="report-issue" href="#">
+<span>Report a Civic Issue</span>
+<span class="w-6 h-6 rounded-full bg-on-primary/10 flex items-center justify-center text-xs group-hover:translate-x-1 transition-transform">→</span>
+</a>
+<a class="inline-flex items-center gap-space-sm px-7 py-3.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all shadow-sm" href="#live-city-section">
+<span class="material-symbols-outlined text-[18px]">explore</span>
+<span>Explore Live City Grid</span>
+</a>
+</div>
+<!-- Hero Interactive Visual Canvas (Tactile Editorial HUD) -->
+<div class="relative w-full rounded-2xl bg-surface-container-low p-space-md md:p-space-lg shadow-sm">
+<!-- Live HUD Control Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-md bg-surface-container-lowest rounded-xl p-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-600"></span>
+</span>
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">Demo Dispatch Grid</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-secondary">Ward 01 - 12 Active</span>
+</div>
+<!-- Real-Time Metrics Strip -->
+<div class="flex flex-wrap items-center gap-space-md lg:gap-space-xl">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="hero-active-counter">142</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase">Active</span>
+</div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-sm text-headline-sm text-emerald-700 font-bold">38</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase">Resolved (24h)</span>
+</div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">94.8%</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase">SLA Target</span>
+</div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-sm text-headline-sm text-error font-bold" id="hero-escalated-counter">3</span>
+<span class="font-label-sm text-label-sm text-error uppercase">Breached</span>
+</div>
+</div>
+<!-- Category Filter Tabs -->
+<div class="flex items-center gap-1 bg-surface-container p-1 rounded-full text-xs">
+<button class="hero-filter-btn active px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm transition-all" data-category="all">All</button>
+<button class="hero-filter-btn px-3 py-1 rounded-full text-secondary hover:text-primary font-label-sm text-label-sm transition-all" data-category="roads">Roads</button>
+<button class="hero-filter-btn px-3 py-1 rounded-full text-secondary hover:text-primary font-label-sm text-label-sm transition-all" data-category="water">Water</button>
+<button class="hero-filter-btn px-3 py-1 rounded-full text-secondary hover:text-primary font-label-sm text-label-sm transition-all" data-category="sanitation">Waste</button>
+</div>
+</div>
+<!-- Interactive Map / Architectural Canvas -->
+<div class="relative w-full h-[380px] sm:h-[460px] rounded-xl overflow-hidden bg-surface-container-high/60 flex items-center justify-center">
+<!-- Background Architectural City Layout Grid -->
+<div class="absolute inset-0 opacity-40">
+<svg class="w-full h-full text-outline-variant" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="48" id="civic-grid" patternunits="userSpaceOnUse" width="48">
+<path d="M 48 0 L 0 0 0 48" fill="none" stroke="currentColor" stroke-dasharray="2,4" stroke-width="0.75"></path>
+</pattern>
+</defs>
+<rect fill="url(#civic-grid)" height="100%" width="100%"></rect>
+<!-- Stylized River & Arterial Roads -->
+<path d="M-50,220 C200,180 400,280 800,200 C1100,140 1300,240 1500,210" fill="none" opacity="0.12" stroke="#536CF3" stroke-width="12"></path>
+<path d="M120,-20 L350,500" fill="none" opacity="0.4" stroke="currentColor" stroke-width="1.5"></path>
+<path d="M600,-20 L750,500" fill="none" opacity="0.4" stroke="currentColor" stroke-width="1.5"></path>
+<path d="M1020,-20 L940,500" fill="none" opacity="0.4" stroke="currentColor" stroke-width="1.5"></path>
+<circle cx="280" cy="190" fill="none" r="140" stroke="currentColor" stroke-dasharray="4,4" stroke-width="0.75"></circle>
+<circle cx="950" cy="220" fill="none" r="180" stroke="currentColor" stroke-dasharray="4,4" stroke-width="0.75"></circle>
+</svg>
+</div>
+<!-- Interactive Clickable Pins (Simulated Incidents) -->
+<!-- Pin 1: Water Main Burst -->
+<div class="hero-pin absolute top-[28%] left-[22%] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-20 group" data-category="water" data-dept="Water &amp; Sewage Authority" data-id="W2-88" data-officer="Insp. K. Varma" data-sla="01h 14m remaining" data-status="Urgent Escalation" data-status-color="text-error" data-time="Reported 46m ago" data-title="Water Main Rupture" data-ward="Ward 02 - Riverfront">
+<span class="relative flex h-7 w-7 items-center justify-center">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-40"></span>
+<span class="relative inline-flex rounded-full h-5 w-5 bg-error items-center justify-center text-white shadow-md">
+<span class="material-symbols-outlined text-[13px]">water_drop</span>
+</span>
+</span>
+<span class="absolute top-7 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded-full bg-surface-container-lowest text-[10px] font-bold text-primary shadow whitespace-nowrap opacity-90 group-hover:opacity-100">#W2-88</span>
+</div>
+<!-- Pin 2: Pothole & Road Cavity -->
+<div class="hero-pin absolute top-[52%] left-[44%] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-20 group" data-category="roads" data-dept="Bureau of Public Works" data-id="W4-102" data-officer="Supervisor R. Chen" data-sla="04h 32m remaining" data-status="Crew En Route" data-status-color="text-emerald-700" data-time="Reported 2h ago" data-title="Structural Cavity / Pothole" data-ward="Ward 04 - Commercial Corridor">
+<span class="relative flex h-7 w-7 items-center justify-center">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-30"></span>
+<span class="relative inline-flex rounded-full h-5 w-5 bg-emerald-700 items-center justify-center text-white shadow-md">
+<span class="material-symbols-outlined text-[13px]">construction</span>
+</span>
+</span>
+<span class="absolute top-7 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded-full bg-surface-container-lowest text-[10px] font-bold text-primary shadow whitespace-nowrap">#W4-102</span>
+</div>
+<!-- Pin 3: Municipal Garbage Overflow -->
+<div class="hero-pin absolute top-[68%] left-[72%] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-20 group" data-category="sanitation" data-dept="Environmental Sanitation" data-id="W9-204" data-officer="Lead D. Adebayo" data-sla="06h 15m remaining" data-status="Assigned to Sanitation Unit 4" data-status-color="text-secondary" data-time="Reported 18m ago" data-title="Bio-Waste Container Overflow" data-ward="Ward 09 - North Transit Hub">
+<span class="relative flex h-6 w-6 items-center justify-center">
+<span class="relative inline-flex rounded-full h-4 w-4 bg-primary items-center justify-center text-white shadow-sm">
+<span class="material-symbols-outlined text-[11px]">delete_sweep</span>
+</span>
+</span>
+<span class="absolute top-6 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded-full bg-surface-container-lowest text-[10px] font-bold text-primary shadow whitespace-nowrap">#W9-204</span>
+</div>
+<!-- Pin 4: Critical High-Voltage Outage -->
+<div class="hero-pin absolute top-[34%] left-[83%] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-20 group" data-category="roads" data-dept="Municipal Power &amp; Lighting" data-id="W7-15" data-officer="Eng. M. Rossi" data-sla="08h 40m remaining" data-status="Triage Completed" data-status-color="text-secondary" data-time="Reported 1h ago" data-title="Streetlight Grid Failure" data-ward="Ward 07 - Heritage Quarter">
+<span class="relative flex h-6 w-6 items-center justify-center">
+<span class="relative inline-flex rounded-full h-4 w-4 bg-secondary items-center justify-center text-white shadow-sm">
+<span class="material-symbols-outlined text-[11px]">lightbulb</span>
+</span>
+</span>
+<span class="absolute top-6 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded-full bg-surface-container-lowest text-[10px] font-bold text-primary shadow whitespace-nowrap">#W7-15</span>
+</div>
+<!-- Floating Interactive Inspection Flyout -->
+<div class="absolute bottom-4 left-4 right-4 sm:right-auto sm:w-96 p-space-md rounded-xl bg-surface-container-lowest/95 backdrop-blur-md shadow-xl transition-all duration-300 z-30" id="hero-inspection-card">
+<div class="flex items-center justify-between pb-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm font-bold text-primary" id="card-ticket-id">#W2-88</span>
+<span class="font-label-sm text-label-sm font-semibold" id="card-status-badge">Urgent Escalation</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold mt-1" id="card-title">Water Main Rupture</h4>
+<p class="font-body-sm text-body-sm text-secondary" id="card-ward">Ward 02 - Riverfront Promenade</p>
+<div class="mt-3 pt-3 flex flex-col gap-1.5 bg-surface-container-low rounded-lg p-2.5 text-xs">
+<div class="flex justify-between">
+<span class="text-secondary">Assigned Dept:</span>
+<span class="font-semibold text-primary" id="card-dept">Water &amp; Sewage Authority</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Assigned Officer:</span>
+<span class="font-semibold text-primary" id="card-officer">Insp. K. Varma</span>
+</div>
+<div class="flex justify-between items-center pt-1">
+<span class="text-secondary">Resolution SLA:</span>
+<span class="font-bold text-error flex items-center gap-1" id="card-sla">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+                  01h 14m remaining
+                </span>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between text-[11px] text-on-surface-variant">
+<span id="card-time">Reported 46m ago</span>
+<a class="font-bold text-primary hover:underline flex items-center gap-0.5" href="#">
+                Audit Trail <span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Bottom Live Stream Activity Strip -->
+<div class="absolute top-4 left-4 right-4 hidden md:flex items-center justify-between pointer-events-none">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+<span class="font-label-sm text-label-sm text-primary font-medium" id="hero-live-ticker">09:42:15 UTC // Ward 04 Pothole auto-routed to Rapid Paving Unit</span>
+</div>
+<div class="px-3 py-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md shadow-sm font-label-sm text-label-sm text-secondary">
+              GPS Precision: 0.8m Verified
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 02. FLOATING FOUR-PILL SERVICE BAR (Nabulé) -->
+<!-- ========================================== -->
+<section class="w-full bg-surface py-6">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<!-- Interactive 4-Pill Bar Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3" id="service-pills-container">
+<!-- Pill 01 -->
+<div class="service-pill-item cursor-pointer group bg-surface-container-lowest hover:bg-surface-container p-4 rounded-2xl shadow-sm transition-all duration-200">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary text-[10px] font-bold flex items-center justify-center">01</span>
+<span class="font-title-md text-title-md text-primary font-bold">REPORT</span>
+</div>
+<span class="pill-toggle-icon material-symbols-outlined text-secondary text-sm group-hover:rotate-45 transition-transform">add</span>
+</div>
+<div class="pill-drawer max-h-0 overflow-hidden group-hover:max-h-24 transition-all duration-300">
+<p class="font-body-sm text-body-sm text-secondary pt-2 leading-relaxed">
+              Geo-referenced, timestamped submission with camera verification and instant duplicate scanning.
+            </p>
+</div>
+</div>
+<!-- Pill 02 -->
+<div class="service-pill-item cursor-pointer group bg-surface-container-lowest hover:bg-surface-container p-4 rounded-2xl shadow-sm transition-all duration-200">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary text-[10px] font-bold flex items-center justify-center">02</span>
+<span class="font-title-md text-title-md text-primary font-bold">ROUTE</span>
+</div>
+<span class="pill-toggle-icon material-symbols-outlined text-secondary text-sm group-hover:rotate-45 transition-transform">add</span>
+</div>
+<div class="pill-drawer max-h-0 overflow-hidden group-hover:max-h-24 transition-all duration-300">
+<p class="font-body-sm text-body-sm text-secondary pt-2 leading-relaxed">
+              Automated rules dispatch issues to exact ward engineers and field units based on live jurisdictional boundary charts.
+            </p>
+</div>
+</div>
+<!-- Pill 03 -->
+<div class="service-pill-item cursor-pointer group bg-surface-container-lowest hover:bg-surface-container p-4 rounded-2xl shadow-sm transition-all duration-200">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary text-[10px] font-bold flex items-center justify-center">03</span>
+<span class="font-title-md text-title-md text-primary font-bold">RESOLVE</span>
+</div>
+<span class="pill-toggle-icon material-symbols-outlined text-secondary text-sm group-hover:rotate-45 transition-transform">add</span>
+</div>
+<div class="pill-drawer max-h-0 overflow-hidden group-hover:max-h-24 transition-all duration-300">
+<p class="font-body-sm text-body-sm text-secondary pt-2 leading-relaxed">
+              Strict municipal SLA clocks with automated three-tier escalation to the City Commissioner upon breach.
+            </p>
+</div>
+</div>
+<!-- Pill 04 -->
+<div class="service-pill-item cursor-pointer group bg-surface-container-lowest hover:bg-surface-container p-4 rounded-2xl shadow-sm transition-all duration-200">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary text-[10px] font-bold flex items-center justify-center">04</span>
+<span class="font-title-md text-title-md text-primary font-bold">TRACK</span>
+</div>
+<span class="pill-toggle-icon material-symbols-outlined text-secondary text-sm group-hover:rotate-45 transition-transform">add</span>
+</div>
+<div class="pill-drawer max-h-0 overflow-hidden group-hover:max-h-24 transition-all duration-300">
+<p class="font-body-sm text-body-sm text-secondary pt-2 leading-relaxed">
+              Public audit trail with photographic proof of resolution and citizen sign-off prior to ticket closure.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 03. CIVIC PRINCIPLES STRIP                 -->
+<!-- ========================================== -->
+<section class="w-full bg-surface py-8">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="py-4 px-6 bg-surface-container-low rounded-2xl flex flex-wrap items-center justify-between gap-y-3 gap-x-6 text-xs text-secondary font-label-sm tracking-wider uppercase">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-primary">verified_user</span>
+<span class="text-primary font-bold">Citizen Centric</span>
+</div>
+<div class="hidden sm:block text-outline-variant">•</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-primary">route</span>
+<span class="text-primary font-bold">Algorithmic Routing</span>
+</div>
+<div class="hidden sm:block text-outline-variant">•</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-primary">badge</span>
+<span class="text-primary font-bold">Named Responsibility</span>
+</div>
+<div class="hidden sm:block text-outline-variant">•</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-primary">hourglass_top</span>
+<span class="text-primary font-bold">Enforced Timelines</span>
+</div>
+<div class="hidden sm:block text-outline-variant">•</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-primary">public</span>
+<span class="text-primary font-bold">Public Oversight</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 04. EDITORIAL ABOUT & ASYMMETRIC 2x2 CARDS -->
+<!-- ========================================== -->
+<section class="w-full bg-surface py-16">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<!-- Asymmetric Editorial Introduction -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start mb-16">
+<div class="lg:col-span-3">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm font-bold text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            ABOUT WARDWISE
+          </div>
+</div>
+<div class="lg:col-span-9">
+<p class="font-headline-lg lg:text-[38px] lg:leading-[50px] text-primary font-normal">
+            Wardwise is an <span class="italic text-secondary">intelligent civic operations</span> framework built to eliminate bureaucratic black holes. We replace opaque filing cabinets with <span class="italic text-secondary">deterministic routing</span> and undeniable <span class="italic text-secondary">public accountability</span>.
+          </p>
+</div>
+</div>
+<!-- 2x2 Asymmetric Feature Cards (Directly echoing Nabulé layout) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Card 1: Citizen Reporting -->
+<div class="bg-surface-container p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest font-label-sm text-label-sm font-bold text-primary">01 Reporting</span>
+<span class="material-symbols-outlined text-secondary text-lg">photo_camera</span>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden flex-shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Close up high quality editorial photo of a smartphone photographing a damaged asphalt street with clear GPS coordinates overlay and civic markers, minimalist warm daylight aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfM71R5Kt_9vd0TPNLp-f5iYMZkklWgONha2TDeha7FqDywGWsltXRtf1bsfhg_Z0pmHLpLrTyuNUUIVPlwJZwoA-zkqG7gYgvYcqUcGTykZP7XoK31MCV6_I4skUqCQgq2LQthIxhhFTq6Cz5GMbuFoRR9e2wUgvinuv4qYid8_uIXsrDAf3YbKUH20Xv_mxpYoNlnOVFt-GXnbBhSi_JxvUNHGl4D2FuQhXZD-7j"/>
+</div>
+<div class="flex-1">
+<h3 class="font-headline-md text-2xl text-primary font-normal">
+                  Citizen <span class="italic text-secondary">Input</span>
+</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 leading-relaxed">
+                  High-fidelity capture with automated geolocation, street address inference, and multi-photo damage verification.
+                </p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-outline-variant/20">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">EXIF Extraction</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">Offline Queue</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">SMS Fallback</span>
+</div>
+</div>
+<!-- Card 2: Intelligent Routing -->
+<div class="bg-surface-container p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest font-label-sm text-label-sm font-bold text-primary">02 Ingestion</span>
+<span class="material-symbols-outlined text-secondary text-lg">schema</span>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden flex-shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Architectural city planning map draft with crisp geometric vector lines, department boundary polygons, and modern municipal administrative zoning, soft off-white and charcoal tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmdF0RNehDfvoEnyM0YJD5ZdFJgV-7x9rN1N6igIGvslEm7DBvv4U3F50dROSc4vYoSHFKEoB9AuMKNFCBhNJRlgQ9dznn9sy2bLVbP_RhDs3PzIBSsqbbPaXFfiDOhfWWFi2eloIK4hxmBBMDzUx3xa5V7D7QL0sbpEr5fGIt_471Sa-lrkaTEvAJU5KgmqiA5qNCbh-MxzAUDvX6HlLxf_tnEh8RF-KHNsfKB7JG"/>
+</div>
+<div class="flex-1">
+<h3 class="font-headline-md text-2xl text-primary font-normal">
+                  Intelligent <span class="italic text-secondary">Routing</span>
+</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 leading-relaxed">
+                  Automatic polygon matching assigns the incident directly to the authorized engineer with zero human clerical bottleneck.
+                </p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-outline-variant/20">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">GIS Polygons</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">Load Balancing</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">Jurisdiction Mesh</span>
+</div>
+</div>
+<!-- Card 3: SLA Accountability -->
+<div class="bg-surface-container p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest font-label-sm text-label-sm font-bold text-primary">03 Governance</span>
+<span class="material-symbols-outlined text-secondary text-lg">timer</span>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden flex-shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Minimalist architectural brass clock mechanism in a bright modernist administrative chamber, soft warm studio lighting, precision engineered aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKSvuqbNvE_-JEsrlAMQVrvpBoBnY4SccZJuHQrIRS24Jg2FbeAVkSQIcGnlyS599lRQsF1P6DgYhOSfDPQcoPzfrHjX7D2PysK67hfFpIRprLdmt6qqkz5sbmh8TrD2j5M39raMJWl1DzOr21G_IO6Rqxgey_Q27RG16cZXWuuWqdCrialQRu0kyYLTH66zy_zD_0WHhZnioDAoQpcHE6zNRprzVceJ7YwuTmALg3"/>
+</div>
+<div class="flex-1">
+<h3 class="font-headline-md text-2xl text-primary font-normal">
+                  SLA <span class="italic text-secondary">Accountability</span>
+</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 leading-relaxed">
+                  Every issue category possesses an ordinance-mandated countdown clock. Breached tasks escalate up the municipal hierarchy.
+                </p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-outline-variant/20">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">3-Tier Escalation</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">Automated Alerts</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">Audit Logs</span>
+</div>
+</div>
+<!-- Card 4: Public Transparency -->
+<div class="bg-surface-container p-6 rounded-2xl flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest font-label-sm text-label-sm font-bold text-primary">04 Oversight</span>
+<span class="material-symbols-outlined text-secondary text-lg">visibility</span>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden flex-shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Close-up of minimalist printed civic audit reports on textured linen paper with stamped numbers and modern data typography, bright architectural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfpARMplJ7FFF4KfoCcVWlnobz4spq3b0Tj63VPHgVqJVu4Je91_NgTqg1yaJmATBO-PoLZD7996rZd-KsYXbra9qwllgDNc7_mtI6VmgBxKj47e0PE6Le0dl1_0PLv1MbgRn1xXQ9Zy-hGnnrTlX8A7or4Qr-9Zu3WcGyqDJAGu9KTaqRaygaskvjRoYjjPDVL_rYI7Ts51-hREs_vvsuHsh6JqzJFYsr9oXZMcA5"/>
+</div>
+<div class="flex-1">
+<h3 class="font-headline-md text-2xl text-primary font-normal">
+                  Public <span class="italic text-secondary">Transparency</span>
+</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 leading-relaxed">
+                  Department speed rankings, ward closure statistics, and resolution galleries accessible to all city residents in open data formats.
+                </p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-outline-variant/20">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">Public Ledger</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">Open Data API</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">Citizen Sign-Off</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 05. SELECTED CIVIC OPERATIONS SHOWCASE     -->
+<!-- ========================================== -->
+<section class="w-full bg-surface py-16">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Selected Operational Case Studies</span>
+<h2 class="font-headline-lg lg:text-[48px] text-primary mt-2">
+            Every issue. <span class="italic text-secondary">A path to resolution.</span>
+</h2>
+</div>
+<div class="mt-4 sm:mt-0">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold hover:text-secondary transition-colors" data-path="transparency" href="#">
+<span>Explore City Ledger</span>
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-xs">→</span>
+</a>
+</div>
+</div>
+<!-- Case 01: Deep Infrastructure Repair -->
+<div class="mb-10 bg-surface-container-low rounded-3xl p-6 sm:p-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-6 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="px-2.5 py-0.5 rounded-full bg-emerald-600/10 text-emerald-800 font-label-sm text-label-sm font-bold">Resolved in 18h</span>
+<span class="font-label-sm text-label-sm text-secondary">Dispatch #WW-7419</span>
+</div>
+<h3 class="font-headline-md lg:text-3xl text-primary font-normal">
+                Sub-Surface Main Conduit <span class="italic text-secondary">Rupture &amp; Repair</span>
+</h3>
+<p class="font-body-md text-body-md text-secondary mt-3 leading-relaxed">
+                Reported by 16 residents along West High Street. Wardwise automatically clustered the notifications, dispatched the Emergency Hydraulic Crew, and halted local flooding within 90 minutes.
+              </p>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/30 grid grid-cols-3 gap-4">
+<div>
+<span class="block font-label-sm text-label-sm text-secondary uppercase">Ward</span>
+<span class="font-title-md text-title-md text-primary font-bold">04 Central</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-secondary uppercase">Unit Assigned</span>
+<span class="font-title-md text-title-md text-primary font-bold">Rapid Paving B</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-secondary uppercase">Citizen Sign-off</span>
+<span class="font-title-md text-title-md text-emerald-700 font-bold">98.2%</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6">
+<div class="relative w-full h-[280px] sm:h-[360px] rounded-2xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Architectural wide shot of an urban municipal utility crew repairing an underground clean water pipe under neat city pavement, morning light, organized high-tech equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi8o2KEqumYuX6eE6t7JPSr9OjNw8a2EOk5MOSizY3zbOiJB8jhmXQ1JM6KDdyWDgS9uug_RzFqTgYxIiW9Urw4yp-c7qBlmvGD5IGWuYpdaoeiDsa7ajS1S9xzdE6F4k2E4sin88gCGIR9OY40DKVY3yTU2xV7_7rzEiN8B2aDTmJxkHvg2fAmihKhG6XJS_B3j5nnMDpjAn0x4SkiEEuLcRaZOjeOA1rJH9CAJsI"/>
+<div class="absolute bottom-4 left-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md p-3 rounded-xl flex items-center justify-between text-xs">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+<span class="font-semibold text-primary">Final Quality Inspection Passed</span>
+</div>
+<span class="text-secondary font-mono">2025-02-14 16:40 UTC</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Case 02 & 03 Split Strip -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container-low rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm font-bold text-primary">Ward 09</span>
+<span class="font-label-sm text-label-sm text-secondary">Transit Intersection</span>
+</div>
+<h3 class="font-headline-md text-2xl text-primary">
+              Signal Controller <span class="italic text-secondary">Overhaul</span>
+</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-2">
+              Optical traffic controller glitch routed to Power &amp; Signal Bureau. Resolved 2.4 hours before peak transit gridlock.
+            </p>
+</div>
+<div class="relative w-full h-48 rounded-xl overflow-hidden mt-6 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Modern geometric urban traffic junction with high tech clean street architecture and overhead traffic signal masts, crisp cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi5xHNK706MqxB1u0sg1S1yNQG55gI_FvC3-gnlNauJwGy8OfJtTg4fT6RpMKMBb2hSC_vHbzat5DdiRY0c3qeAzhPXVUXhmcnhfZBguG8S5HyXvxdmxfuEyC-tvrwXKkgUc0goNjbfsrKHsfstULLYntVbj1Tipc3bp7DEoJRSoRNMasCJA5B68GkKqdEBUdvU0JufwMeIowSbYLH1JAUqYBEyNkNjNM31uYxRrVU"/>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-3xl p-6 sm:p-8 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm font-bold text-primary">Ward 02</span>
+<span class="font-label-sm text-label-sm text-secondary">Botanical Corridor</span>
+</div>
+<h3 class="font-headline-md text-2xl text-primary">
+              Fallen Arbor <span class="italic text-secondary">Hazard Clear</span>
+</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-2">
+              Storm damage cleared from dedicated pedestrian boulevard within 42 minutes through priority dispatch protocol.
+            </p>
+</div>
+<div class="relative w-full h-48 rounded-xl overflow-hidden mt-6 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Tree lined municipal walkway with cobblestone pavers and clean minimalist urban landscaping, soft overcast daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw2E-7eDkExd7jGiCt1zYmIGvOPB8I77PVpB-vsDGoyCpVeR15124c9FVC3LST2fXmqfeDUnKZqq-QcLC4CK-0Fl6eruArq2nftHFvJGZn_J5_0j1uLHVnOSTOfwdzd_mB83RO0ikDg93-qC2HnGoX72if5G5P5XiJJqqpVGX5kqCCROhBswkhsiJr_Zxav7sbRQzYaGViZfNhV18aDq0eOcuswxm8P501PtqcNQoq"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 06. LIVE CITY VISUALIZATION                -->
+<!-- ========================================== -->
+<section class="w-full bg-surface-container-low py-16" id="live-city-section">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between mb-10">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">The City In Real Time</span>
+<h2 class="font-headline-lg lg:text-[44px] text-primary mt-2">
+            See the issues. <span class="italic text-secondary">Understand the city.</span>
+</h2>
+</div>
+<p class="font-body-md text-body-md text-secondary max-w-md mt-4 lg:mt-0">
+          Select any municipal ward to review live ticket density, active personnel, and real-time stress index meters.
+        </p>
+</div>
+<!-- District Selector Tabs -->
+<div class="flex flex-wrap items-center gap-2 mb-6">
+<button class="ward-tab-btn px-4 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold transition-all" data-ward="w01">
+          Ward 01 — Central Core
+        </button>
+<button class="ward-tab-btn px-4 py-2 rounded-full bg-surface-container-lowest text-secondary hover:text-primary font-label-sm text-label-sm font-bold transition-all" data-ward="w04">
+          Ward 04 — West Corridor
+        </button>
+<button class="ward-tab-btn px-4 py-2 rounded-full bg-surface-container-lowest text-secondary hover:text-primary font-label-sm text-label-sm font-bold transition-all" data-ward="w07">
+          Ward 07 — South Historic
+        </button>
+<button class="ward-tab-btn px-4 py-2 rounded-full bg-surface-container-lowest text-secondary hover:text-primary font-label-sm text-label-sm font-bold transition-all" data-ward="w09">
+          Ward 09 — North Harbor
+        </button>
+</div>
+<!-- Ward Metrics & Active Radar Box -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-8 shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Ward Overview Data -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider" id="ward-code-label">WARD-01-CORE</span>
+<span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-label-sm font-bold" id="ward-status-chip">Optimal Flow</span>
+</div>
+<h3 class="font-headline-md text-3xl text-primary font-normal" id="ward-name-label">Central Business &amp; Civic Spine</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-2" id="ward-desc-label">
+                Covers main commercial avenues, the supreme judicial plaza, and transit terminus. High footfall zone.
+              </p>
+<!-- Stress Index Meter -->
+<div class="mt-6 p-4 rounded-xl bg-surface-container-low">
+<div class="flex justify-between items-center text-xs mb-2">
+<span class="font-bold text-primary">Ward Stress Index</span>
+<span class="font-mono font-bold text-primary" id="ward-stress-value">28% (Low)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-emerald-600 transition-all duration-500 rounded-full" id="ward-stress-bar" style="width: 28%"></div>
+</div>
+<span class="block text-[11px] text-secondary mt-2">Calculated from open complaints vs available response teams.</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 pt-6 border-t border-outline-variant/30 mt-6">
+<div>
+<span class="font-label-sm text-label-sm text-secondary">Active Work</span>
+<span class="block font-headline-sm text-headline-sm text-primary font-bold" id="ward-active-val">19</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary">Inspectors</span>
+<span class="block font-headline-sm text-headline-sm text-primary font-bold" id="ward-inspectors-val">12</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary">Avg SLA</span>
+<span class="block font-headline-sm text-headline-sm text-primary font-bold" id="ward-sla-val">97.4%</span>
+</div>
+</div>
+</div>
+<!-- Ward Simulated Ticket Feed -->
+<div class="lg:col-span-7 flex flex-col gap-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Latest Live Tickets In This Ward</span>
+<div class="flex flex-col gap-2.5" id="ward-ticket-feed">
+<!-- Item 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">traffic</span>
+</div>
+<div>
+<span class="block font-title-md text-title-md text-primary font-bold">Pedestrian Crossing Button Desync</span>
+<span class="text-xs text-secondary">Market St. &amp; 4th // SLA: 2h 10m remaining</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-primary font-semibold">Triage OK</span>
+</div>
+<!-- Item 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">cleaning_services</span>
+</div>
+<div>
+<span class="block font-title-md text-title-md text-primary font-bold">Plaza Fountain Drainage Blockage</span>
+<span class="text-xs text-secondary">Civic Esplanade // SLA: 4h 00m remaining</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-primary font-semibold">En Route</span>
+</div>
+<!-- Item 3 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">water</span>
+</div>
+<div>
+<span class="block font-title-md text-title-md text-primary font-bold">Irrigation Line Slow Seep</span>
+<span class="text-xs text-secondary">Parkway Median // SLA: 7h 45m remaining</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-primary font-semibold">Scheduled</span>
+</div>
+</div>
+<div class="mt-2 text-right">
+<span class="text-xs text-secondary">Synchronized with Municipal API at 1-second intervals.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 07. HOW THE SYSTEM WORKS (4-Stage Flow)    -->
+<!-- ========================================== -->
+<section class="w-full bg-surface py-20">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">System Architecture</span>
+<h2 class="font-headline-lg lg:text-[44px] text-primary mt-2">
+          From issue notice to <span class="italic text-secondary">verified completion.</span>
+</h2>
+<p class="font-body-md text-body-md text-secondary mt-3">
+          A four-tier operational lifecycle that guarantees tickets cannot be quietly closed without ground verification.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-low p-6 rounded-2xl flex flex-col justify-between relative group hover:bg-surface-container transition-all">
+<div>
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-bold flex items-center justify-center mb-6">
+              01
+            </div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Submission &amp; Geotag</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-2 leading-relaxed">
+              Resident uploads incident imagery. Our ingestion engine validates EXIF coordinates, scans adjacent tickets for duplicate clustering, and creates an immutable ledger entry.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 text-xs font-semibold text-primary flex items-center gap-1">
+<span>Instant Hash Token</span>
+<span class="material-symbols-outlined text-[14px]">done</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-low p-6 rounded-2xl flex flex-col justify-between relative group hover:bg-surface-container transition-all">
+<div>
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-bold flex items-center justify-center mb-6">
+              02
+            </div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Algorithmic Triage</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-2 leading-relaxed">
+              Ward GIS boundaries intersect with category rules. The ticket is immediately routed to the certified on-duty field supervisor, bypassing manual bureaucratic desks.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 text-xs font-semibold text-primary flex items-center gap-1">
+<span>Zero Clerk Latency</span>
+<span class="material-symbols-outlined text-[14px]">done</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-low p-6 rounded-2xl flex flex-col justify-between relative group hover:bg-surface-container transition-all">
+<div>
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-bold flex items-center justify-center mb-6">
+              03
+            </div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold">SLA Enforcement</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-2 leading-relaxed">
+              Mandated resolution clocks begin. If unresolved at 70% threshold, automatic supervisor ping initiates. At 100% breach, escalates to the City Commissioner dashboard.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 text-xs font-semibold text-primary flex items-center gap-1">
+<span>Automatic Escalation</span>
+<span class="material-symbols-outlined text-[14px]">done</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-low p-6 rounded-2xl flex flex-col justify-between relative group hover:bg-surface-container transition-all">
+<div>
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-bold flex items-center justify-center mb-6">
+              04
+            </div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Photo Verification</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-2 leading-relaxed">
+              Crew photographs completed work at original GPS coordinates. The citizen receives side-by-side photographic proof and has 48 hours to affirm satisfaction before closure.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 text-xs font-semibold text-primary flex items-center gap-1">
+<span>Dual-Key Closure</span>
+<span class="material-symbols-outlined text-[14px]">done</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 08. SLA & ESCALATION THEATRE (DARK THEME)  -->
+<!-- ========================================== -->
+<section class="w-full bg-[#121316] text-[#FAF9F5] py-20">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start mb-12">
+<div class="lg:col-span-6">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-[#939498] font-bold">Autonomous Governance</span>
+<h2 class="font-headline-lg lg:text-[46px] text-white mt-2 leading-tight">
+            A deadline should <span class="italic text-[#BAC3FF]">mean something.</span>
+</h2>
+<p class="font-body-md text-body-md text-[#B5B7BA] mt-4 leading-relaxed max-w-xl">
+            In standard municipalities, missed deadlines are buried. In Wardwise, unresolved issues automatically elevate through three jurisdictional tiers until action is taken.
+          </p>
+<!-- Simulator Control -->
+<div class="mt-8 p-4 rounded-2xl bg-white/5 flex flex-col gap-3">
+<span class="text-xs uppercase tracking-wider text-[#A0A2A6] font-bold">Interactive Escalation Simulator</span>
+<div class="flex flex-wrap gap-2">
+<button class="sim-btn px-4 py-1.5 rounded-full bg-[#16A36A] text-white text-xs font-bold transition-all" data-level="1">
+                Phase 1: Normal (T+0h)
+              </button>
+<button class="sim-btn px-4 py-1.5 rounded-full bg-white/10 text-white hover:bg-white/20 text-xs font-bold transition-all" data-level="2">
+                Phase 2: Warning (T+4h Breach)
+              </button>
+<button class="sim-btn px-4 py-1.5 rounded-full bg-white/10 text-white hover:bg-white/20 text-xs font-bold transition-all" data-level="3">
+                Phase 3: Critical (T+12h Breach)
+              </button>
+</div>
+</div>
+</div>
+<!-- Interactive 3-Tier Ladder Display -->
+<div class="lg:col-span-6 flex flex-col gap-4">
+<!-- Tier 1 -->
+<div class="p-5 rounded-2xl bg-white/10 border-l-4 border-[#16A36A] transition-all duration-300" id="tier-box-1">
+<div class="flex items-center justify-between">
+<span class="text-xs font-mono tracking-wider text-[#BAC3FF] uppercase font-bold">Tier 01 // Field Execution</span>
+<span class="text-xs font-bold text-[#16A36A]" id="tier-status-1">Active Assignment</span>
+</div>
+<h4 class="font-headline-sm text-xl text-white font-bold mt-1">Ward Field Unit &amp; District Inspector</h4>
+<p class="text-xs text-[#B5B7BA] mt-1">Responsible for initial assessment, dispatched repairs, and initial status updates.</p>
+</div>
+<!-- Tier 2 -->
+<div class="p-5 rounded-2xl bg-white/5 opacity-60 border-l-4 border-transparent transition-all duration-300" id="tier-box-2">
+<div class="flex items-center justify-between">
+<span class="text-xs font-mono tracking-wider text-[#BAC3FF] uppercase font-bold">Tier 02 // Ward Oversight</span>
+<span class="text-xs font-bold text-white/50" id="tier-status-2">Standby</span>
+</div>
+<h4 class="font-headline-sm text-xl text-white font-bold mt-1">Ward Executive Engineer &amp; Dept Head</h4>
+<p class="text-xs text-[#B5B7BA] mt-1">Automatic SMS and alert chime pushed to supervisor upon 75% SLA consumption.</p>
+</div>
+<!-- Tier 3 -->
+<div class="p-5 rounded-2xl bg-white/5 opacity-60 border-l-4 border-transparent transition-all duration-300" id="tier-box-3">
+<div class="flex items-center justify-between">
+<span class="text-xs font-mono tracking-wider text-[#BAC3FF] uppercase font-bold">Tier 03 // Executive Cabinet</span>
+<span class="text-xs font-bold text-white/50" id="tier-status-3">Standby</span>
+</div>
+<h4 class="font-headline-sm text-xl text-white font-bold mt-1">Municipal Commissioner &amp; Public Ledger</h4>
+<p class="text-xs text-[#B5B7BA] mt-1">Ticket breached. Pinned to the municipal executive dashboard with public breach penalty marked.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 09. DUPLICATE DETECTION CLUSTER VISUALIZER -->
+<!-- ========================================== -->
+<section class="w-full bg-surface py-20">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Algorithmic Deduplication</span>
+<h2 class="font-headline-lg lg:text-[42px] text-primary mt-2">
+            One problem. Many voices. <span class="italic text-secondary">One coordinated response.</span>
+</h2>
+<p class="font-body-md text-body-md text-secondary mt-4 leading-relaxed">
+            When a water main breaks or a traffic light fails, fifty citizens report the same issue. Instead of creating 50 separate chaos tickets, Wardwise clusters them into a single Master Work Order while keeping all 50 citizens in the loop.
+          </p>
+<div class="mt-6 flex flex-col gap-2.5 text-xs text-secondary">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span>
+<span>Prevents duplicate truck dispatch to identical coordinates</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span>
+<span>All original reporting citizens receive simultaneous SMS alerts</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-600 text-sm">check_circle</span>
+<span>Combined photo angles provide field engineers 360-degree context</span>
+</div>
+</div>
+</div>
+<!-- Deduplication Graphic Box -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-3xl p-6 sm:p-8">
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm">
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/20">
+<span class="font-label-sm text-label-sm font-bold text-primary">Master Work Order #MW-8802</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold">14 Citizen Reports Clustered</span>
+</div>
+<!-- Visual Flow Cluster -->
+<div class="py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+<!-- 4 Input Nodes -->
+<div class="flex md:flex-col gap-2">
+<div class="px-3 py-1.5 rounded-lg bg-surface-container text-[11px] font-mono text-secondary">Citizen #1 (Photo)</div>
+<div class="px-3 py-1.5 rounded-lg bg-surface-container text-[11px] font-mono text-secondary">Citizen #2 (GPS)</div>
+<div class="px-3 py-1.5 rounded-lg bg-surface-container text-[11px] font-mono text-secondary">Citizen #3 (Voice)</div>
+<div class="px-3 py-1.5 rounded-lg bg-surface-container text-[11px] font-mono text-secondary">+11 Others</div>
+</div>
+<!-- Center Funnel Icon -->
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-xl">merge</span>
+</div>
+<!-- Unified Target -->
+<div class="p-4 rounded-xl bg-surface-container-high border-l-4 border-primary flex-1">
+<span class="text-[10px] uppercase font-bold text-secondary">Unified Dispatch</span>
+<h5 class="font-title-md text-title-md text-primary font-bold">Main Sewer Overflow — Ward 03</h5>
+<span class="text-xs text-secondary block mt-1">Single Crew Dispatched // 14 Subscribers Notified</span>
+</div>
+</div>
+<div class="pt-3 border-t border-outline-variant/20 flex justify-between text-xs text-secondary">
+<span>Clustering Confidence: 99.4%</span>
+<span class="font-bold text-emerald-700">Conserved ~13 Municipal Work Hours</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 10. REORGANIZATION & HISTORICAL AUDIT      -->
+<!-- ========================================== -->
+<section class="w-full bg-surface-container-low py-16">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="max-w-2xl mb-10">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Institutional Continuity</span>
+<h2 class="font-headline-lg lg:text-[42px] text-primary mt-2">
+          Cities change. <span class="italic text-secondary">Accountability shouldn't disappear.</span>
+</h2>
+<p class="font-body-md text-body-md text-secondary mt-2">
+          When departments restructure or boundary lines shift, past unresolved tickets don't fall off the ledger. Full provenance is retained with retroactive audit trails.
+        </p>
+</div>
+<div class="bg-surface-container-lowest rounded-3xl p-6 sm:p-8 shadow-sm">
+<div class="flex flex-wrap items-center justify-between pb-6 mb-6 border-b border-outline-variant/30 gap-4">
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-title-md text-title-md font-bold text-primary">Department Reorganization Simulation</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold hover:bg-primary-container transition-all" id="toggle-reorg-btn">
+              Simulate Dept Restructure
+            </button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center" id="reorg-display-container">
+<!-- State A: Old Structure -->
+<div class="p-5 rounded-2xl bg-surface-container-low">
+<span class="text-xs uppercase font-bold text-secondary">Legacy Municipal Hierarchy (2024)</span>
+<h4 class="font-headline-sm text-xl text-primary font-bold mt-1">Public Works Division A</h4>
+<div class="mt-4 flex flex-col gap-2 text-xs">
+<div class="p-2 bg-surface-container-lowest rounded flex justify-between">
+<span>Pothole Repair SLA</span>
+<span class="font-mono font-bold">48 Hours</span>
+</div>
+<div class="p-2 bg-surface-container-lowest rounded flex justify-between">
+<span>Active Assigned Officers</span>
+<span class="font-mono font-bold">8 Officers</span>
+</div>
+</div>
+</div>
+<!-- State B: Modern Restructured -->
+<div class="p-5 rounded-2xl bg-surface-container-high border-2 border-primary/20">
+<span class="text-xs uppercase font-bold text-secondary" id="reorg-dest-tag">Future Unified Bureau (2025)</span>
+<h4 class="font-headline-sm text-xl text-primary font-bold mt-1" id="reorg-dest-title">Department of Urban Mobility &amp; Pavement</h4>
+<div class="mt-4 flex flex-col gap-2 text-xs">
+<div class="p-2 bg-surface-container-lowest rounded flex justify-between">
+<span>Migrated Ticket History</span>
+<span class="font-mono font-bold text-emerald-700" id="reorg-migrated-count">1,420 of 1,420 Preserved</span>
+</div>
+<div class="p-2 bg-surface-container-lowest rounded flex justify-between">
+<span>Audit Signature</span>
+<span class="font-mono text-secondary" id="reorg-hash">SHA-256 Validated</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 11. PUBLIC TRANSPARENCY & SCOREBOARD       -->
+<!-- ========================================== -->
+<section class="w-full bg-surface py-20">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Public Service Deserves Public Visibility</span>
+<h2 class="font-headline-lg lg:text-[44px] text-primary mt-2">
+            Municipal Department <span class="italic text-secondary">Scoreboard</span>
+</h2>
+</div>
+<p class="font-body-sm text-body-sm text-secondary max-w-sm mt-3 lg:mt-0">
+          Rankings updated continuously using real resolution data, audited response times, and citizen sign-off scores.
+        </p>
+</div>
+<!-- Department Table Card -->
+<div class="bg-surface-container-low rounded-3xl p-4 sm:p-8 overflow-x-auto shadow-sm">
+<table class="w-full text-left border-collapse min-w-[640px]">
+<thead>
+<tr class="border-b border-outline-variant/30 text-xs font-label-sm uppercase text-secondary">
+<th class="py-3 px-4">Rank</th>
+<th class="py-3 px-4">Department</th>
+<th class="py-3 px-4">Active Open</th>
+<th class="py-3 px-4">Resolved (30d)</th>
+<th class="py-3 px-4">Avg Response</th>
+<th class="py-3 px-4">SLA Compliance</th>
+<th class="py-3 px-4 text-right">Citizen Score</th>
+</tr>
+</thead>
+<tbody class="text-sm font-body-sm text-primary divide-y divide-outline-variant/20">
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-4 px-4 font-mono font-bold">01</td>
+<td class="py-4 px-4 font-bold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                Water &amp; Clean Drainage
+              </td>
+<td class="py-4 px-4">24</td>
+<td class="py-4 px-4 font-semibold">312</td>
+<td class="py-4 px-4">1.2 hrs</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-16 h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-emerald-600 rounded-full" style="width: 98%"></div>
+</div>
+<span class="font-mono text-xs font-bold">98.4%</span>
+</div>
+</td>
+<td class="py-4 px-4 text-right font-bold text-emerald-700">4.9 / 5.0</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-4 px-4 font-mono font-bold">02</td>
+<td class="py-4 px-4 font-bold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                Power &amp; Street Illumination
+              </td>
+<td class="py-4 px-4">18</td>
+<td class="py-4 px-4 font-semibold">244</td>
+<td class="py-4 px-4">2.1 hrs</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-16 h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-emerald-600 rounded-full" style="width: 96%"></div>
+</div>
+<span class="font-mono text-xs font-bold">96.1%</span>
+</div>
+</td>
+<td class="py-4 px-4 text-right font-bold text-emerald-700">4.8 / 5.0</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-4 px-4 font-mono font-bold">03</td>
+<td class="py-4 px-4 font-bold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Public Pavement &amp; Transit Corridors
+              </td>
+<td class="py-4 px-4">62</td>
+<td class="py-4 px-4 font-semibold">518</td>
+<td class="py-4 px-4">4.8 hrs</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-16 h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 92%"></div>
+</div>
+<span class="font-mono text-xs font-bold">92.3%</span>
+</div>
+</td>
+<td class="py-4 px-4 text-right font-bold text-primary">4.6 / 5.0</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="py-4 px-4 font-mono font-bold">04</td>
+<td class="py-4 px-4 font-bold flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Waste Sanitation &amp; Bio-Removal
+              </td>
+<td class="py-4 px-4">38</td>
+<td class="py-4 px-4 font-semibold">410</td>
+<td class="py-4 px-4">3.6 hrs</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<div class="w-16 h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 91%"></div>
+</div>
+<span class="font-mono text-xs font-bold">91.8%</span>
+</div>
+</td>
+<td class="py-4 px-4 text-right font-bold text-primary">4.5 / 5.0</td>
+</tr>
+</tbody>
+</table>
+<div class="mt-4 pt-3 flex flex-wrap justify-between items-center text-xs text-secondary">
+<span>* Illustrative demonstration metrics for demo ward zone.</span>
+<a class="font-bold text-primary hover:underline" data-path="transparency" href="#">Download Complete CSV Ledger →</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 12. IMPACT STATISTICS COUNTERS             -->
+<!-- ========================================== -->
+<section class="w-full bg-surface-container py-16">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+<div>
+<span class="block font-headline-lg lg:text-[54px] text-primary font-normal">14,820<span class="text-secondary">+</span></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary mt-1 block">Civic Issues Resolved</span>
+</div>
+<div>
+<span class="block font-headline-lg lg:text-[54px] text-primary font-normal">96.4<span class="text-secondary">%</span></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary mt-1 block">SLA Compliance Rate</span>
+</div>
+<div>
+<span class="block font-headline-lg lg:text-[54px] text-primary font-normal">1.4<span class="text-secondary">h</span></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary mt-1 block">Average First Triage</span>
+</div>
+<div>
+<span class="block font-headline-lg lg:text-[54px] text-primary font-normal">12<span class="text-secondary">/12</span></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary mt-1 block">Connected Wards</span>
+</div>
+</div>
+<div class="mt-8 text-xs text-secondary text-left">
+        Independent civic audit published bi-weekly under open municipal license.
+      </div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 13. FINAL CINEMATIC CTA                    -->
+<!-- ========================================== -->
+<section class="w-full bg-surface py-24">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="bg-surface-container-low rounded-3xl p-8 sm:p-16 text-center max-w-4xl mx-auto shadow-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Public Systems In Action</span>
+<h2 class="font-headline-lg lg:text-[56px] lg:leading-[64px] text-primary font-normal mt-4">
+          Your city deserves a <br class="hidden sm:inline"/>
+<span class="italic text-secondary">better way forward.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-secondary max-w-xl mx-auto mt-6 leading-relaxed">
+          Every report can lead to action. Every action can build a more accountable, responsive, and humane urban home.
+        </p>
+<div class="mt-10 flex flex-wrap items-center justify-center gap-space-md">
+<a class="inline-flex items-center gap-space-sm px-8 py-4 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all shadow-md group" data-path="report-issue" href="#">
+<span>Report an Issue Now</span>
+<span class="w-6 h-6 rounded-full bg-on-primary/10 flex items-center justify-center text-xs group-hover:translate-x-1 transition-transform">→</span>
+</a>
+<a class="inline-flex items-center gap-space-sm px-8 py-4 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all shadow-sm" data-path="platform" href="#">
+<span>Explore WARDWISE Platform</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- INLINE VANILLA JAVASCRIPT LOGIC            -->
+<!-- ========================================== -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Hero Map Pins Interactive Inspection
+      const pins = document.querySelectorAll('.hero-pin');
+      const cardTicketId = document.getElementById('card-ticket-id');
+      const cardTitle = document.getElementById('card-title');
+      const cardWard = document.getElementById('card-ward');
+      const cardDept = document.getElementById('card-dept');
+      const cardOfficer = document.getElementById('card-officer');
+      const cardSla = document.getElementById('card-sla');
+      const cardTime = document.getElementById('card-time');
+      const cardStatus = document.getElementById('card-status-badge');
+
+      pins.forEach(pin => {
+        pin.addEventListener('click', () => {
+          cardTicketId.textContent = '#' + pin.dataset.id;
+          cardTitle.textContent = pin.dataset.title;
+          cardWard.textContent = pin.dataset.ward;
+          cardDept.textContent = pin.dataset.dept;
+          cardOfficer.textContent = pin.dataset.officer;
+          cardSla.innerHTML = `<span class="material-symbols-outlined text-[14px]">timer</span> ` + pin.dataset.sla;
+          cardTime.textContent = pin.dataset.time;
+          cardStatus.textContent = pin.dataset.status;
+          
+          // Visual pulse feedback
+          pins.forEach(p => p.classList.remove('scale-125'));
+          pin.classList.add('scale-125');
+        });
+      });
+
+      // 2. Hero Filter Buttons
+      const filterBtns = document.querySelectorAll('.hero-filter-btn');
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary', 'active');
+            b.classList.add('text-secondary');
+          });
+          btn.classList.add('bg-primary', 'text-on-primary', 'active');
+          btn.classList.remove('text-secondary');
+
+          const category = btn.dataset.category;
+          pins.forEach(pin => {
+            if (category === 'all' || pin.dataset.category === category) {
+              pin.style.display = 'block';
+            } else {
+              pin.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 3. Service Bar Expandable Pill Drawer logic on click
+      const pillItems = document.querySelectorAll('.service-pill-item');
+      pillItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const drawer = item.querySelector('.pill-drawer');
+          const icon = item.querySelector('.pill-toggle-icon');
+          if (drawer.style.maxHeight && drawer.style.maxHeight !== '0px') {
+            drawer.style.maxHeight = '0px';
+            icon.textContent = 'add';
+          } else {
+            drawer.style.maxHeight = '120px';
+            icon.textContent = 'remove';
+          }
+        });
+      });
+
+      // 4. Live City Ward Selector
+      const wardData = {
+        'w01': {
+          code: 'WARD-01-CORE',
+          name: 'Central Business & Civic Spine',
+          desc: 'Covers main commercial avenues, the supreme judicial plaza, and transit terminus. High footfall zone.',
+          stress: '28% (Low)',
+          stressBar: '28%',
+          status: 'Optimal Flow',
+          statusClass: 'bg-emerald-100 text-emerald-800',
+          active: '19',
+          inspectors: '12',
+          sla: '97.4%',
+          tickets: [
+            { icon: 'traffic', title: 'Pedestrian Crossing Button Desync', sub: 'Market St. & 4th // SLA: 2h 10m', tag: 'Triage OK' },
+            { icon: 'cleaning_services', title: 'Plaza Fountain Drainage Blockage', sub: 'Civic Esplanade // SLA: 4h 00m', tag: 'En Route' },
+            { icon: 'water', title: 'Irrigation Line Slow Seep', sub: 'Parkway Median // SLA: 7h 45m', tag: 'Scheduled' }
+          ]
+        },
+        'w04': {
+          code: 'WARD-04-WEST',
+          name: 'West Industrial & Corridor',
+          desc: 'Heavy freight avenues, warehouse logistics clusters, and commuter arterial highways.',
+          stress: '64% (Moderate)',
+          stressBar: '64%',
+          status: 'Heavy Traffic Pressure',
+          statusClass: 'bg-amber-100 text-amber-800',
+          active: '42',
+          inspectors: '18',
+          sla: '91.2%',
+          tickets: [
+            { icon: 'construction', title: 'Freight Lane Pavement Cavity', sub: 'Truck Route 10 // SLA: 1h 15m', tag: 'Breach Risk' },
+            { icon: 'lightbulb', title: 'Highway Sodium Lamp Down', sub: 'Overpass 4B // SLA: 5h 20m', tag: 'En Route' },
+            { icon: 'bolt', title: 'Substation Gate Sensor Fault', sub: 'Substation West // SLA: 3h 10m', tag: 'Assigned' }
+          ]
+        },
+        'w07': {
+          code: 'WARD-07-HIST',
+          name: 'South Historic & Cultural Quarter',
+          desc: 'Cobblestone streets, heritage architecture regulations, and dense residential courtyards.',
+          stress: '38% (Low)',
+          stressBar: '38%',
+          status: 'Controlled',
+          statusClass: 'bg-emerald-100 text-emerald-800',
+          active: '14',
+          inspectors: '9',
+          sla: '98.0%',
+          tickets: [
+            { icon: 'park', title: 'Heritage Oak Branch Trimming', sub: 'Cathedral Courtyard // SLA: 8h 00m', tag: 'Scheduled' },
+            { icon: 'water_drop', title: 'Stone Canal Seepage Test', sub: 'Lower Lock // SLA: 6h 30m', tag: 'Under Review' },
+            { icon: 'signpost', title: 'Historic Plaque Replacement', sub: 'Old Guild Hall // SLA: 14h 00m', tag: 'Logged' }
+          ]
+        },
+        'w09': {
+          code: 'WARD-09-HARBOR',
+          name: 'North Harbor & Maritime District',
+          desc: 'Commercial docks, cold storage warehouses, coastal defense dikes, and freight rail terminals.',
+          stress: '82% (High Surge)',
+          stressBar: '82%',
+          status: 'Storm Protocol Active',
+          statusClass: 'bg-red-100 text-red-800',
+          active: '58',
+          inspectors: '22',
+          sla: '88.6%',
+          tickets: [
+            { icon: 'flood', title: 'Dock 3 Seawall Scupper Overflow', sub: 'Pier Avenue // SLA: 0h 42m', tag: 'URGENT' },
+            { icon: 'delete_sweep', title: 'Commercial Fish Market Waste Spill', sub: 'Fishermans Reach // SLA: 2h 00m', tag: 'Dispatched' },
+            { icon: 'power', title: 'Crane Bay High-Tension Fault', sub: 'North Gantry // SLA: 1h 30m', tag: 'On-Site' }
+          ]
+        }
+      };
+
+      const wardBtns = document.querySelectorAll('.ward-tab-btn');
+      wardBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          wardBtns.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary');
+            b.classList.add('bg-surface-container-lowest', 'text-secondary');
+          });
+          btn.classList.add('bg-primary', 'text-on-primary');
+          btn.classList.remove('bg-surface-container-lowest', 'text-secondary');
+
+          const w = wardData[btn.dataset.ward];
+          if (!w) return;
+
+          document.getElementById('ward-code-label').textContent = w.code;
+          document.getElementById('ward-name-label').textContent = w.name;
+          document.getElementById('ward-desc-label').textContent = w.desc;
+          document.getElementById('ward-stress-value').textContent = w.stress;
+          document.getElementById('ward-stress-bar').style.width = w.stressBar;
+          document.getElementById('ward-active-val').textContent = w.active;
+          document.getElementById('ward-inspectors-val').textContent = w.inspectors;
+          document.getElementById('ward-sla-val').textContent = w.sla;
+
+          const chip = document.getElementById('ward-status-chip');
+          chip.textContent = w.status;
+          chip.className = `px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-bold ${w.statusClass}`;
+
+          // Update feed
+          const feed = document.getElementById('ward-ticket-feed');
+          feed.innerHTML = w.tickets.map(t => `
+            <div class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined text-[16px]">${t.icon}</span>
+                </div>
+                <div>
+                  <span class="block font-title-md text-title-md text-primary font-bold">${t.title}</span>
+                  <span class="text-xs text-secondary">${t.sub}</span>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-primary font-semibold">${t.tag}</span>
+            </div>
+          `).join('');
+        });
+      });
+
+      // 5. Escalation Simulator
+      const simBtns = document.querySelectorAll('.sim-btn');
+      const box1 = document.getElementById('tier-box-1');
+      const box2 = document.getElementById('tier-box-2');
+      const box3 = document.getElementById('tier-box-3');
+      const stat1 = document.getElementById('tier-status-1');
+      const stat2 = document.getElementById('tier-status-2');
+      const stat3 = document.getElementById('tier-status-3');
+
+      simBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          simBtns.forEach(b => {
+            b.className = 'sim-btn px-4 py-1.5 rounded-full bg-white/10 text-white hover:bg-white/20 text-xs font-bold transition-all';
+          });
+          const lvl = btn.dataset.level;
+
+          if (lvl === '1') {
+            btn.className = 'sim-btn px-4 py-1.5 rounded-full bg-[#16A36A] text-white text-xs font-bold transition-all';
+            box1.className = 'p-5 rounded-2xl bg-white/10 border-l-4 border-[#16A36A] transition-all duration-300';
+            box2.className = 'p-5 rounded-2xl bg-white/5 opacity-60 border-l-4 border-transparent transition-all duration-300';
+            box3.className = 'p-5 rounded-2xl bg-white/5 opacity-60 border-l-4 border-transparent transition-all duration-300';
+            stat1.textContent = 'Active Assignment';
+            stat1.className = 'text-xs font-bold text-[#16A36A]';
+            stat2.textContent = 'Standby';
+            stat3.textContent = 'Standby';
+          } else if (lvl === '2') {
+            btn.className = 'sim-btn px-4 py-1.5 rounded-full bg-amber-500 text-white text-xs font-bold transition-all';
+            box1.className = 'p-5 rounded-2xl bg-white/5 opacity-60 border-l-4 border-transparent transition-all duration-300';
+            box2.className = 'p-5 rounded-2xl bg-white/15 border-l-4 border-amber-500 transition-all duration-300';
+            box3.className = 'p-5 rounded-2xl bg-white/5 opacity-60 border-l-4 border-transparent transition-all duration-300';
+            stat1.textContent = 'Escalated Past Window';
+            stat1.className = 'text-xs font-bold text-white/50';
+            stat2.textContent = 'Urgent Chime Pushed (Supervisor)';
+            stat2.className = 'text-xs font-bold text-amber-400';
+            stat3.textContent = 'Standby';
+          } else if (lvl === '3') {
+            btn.className = 'sim-btn px-4 py-1.5 rounded-full bg-red-600 text-white text-xs font-bold transition-all';
+            box1.className = 'p-5 rounded-2xl bg-white/5 opacity-60 border-l-4 border-transparent transition-all duration-300';
+            box2.className = 'p-5 rounded-2xl bg-white/5 opacity-60 border-l-4 border-transparent transition-all duration-300';
+            box3.className = 'p-5 rounded-2xl bg-white/20 border-l-4 border-red-500 transition-all duration-300';
+            stat1.textContent = 'Overdue';
+            stat2.textContent = 'Supervisor Breach Logged';
+            stat3.textContent = 'CRITICAL // Commissioner Pinned';
+            stat3.className = 'text-xs font-bold text-red-400';
+          }
+        });
+      });
+
+      // 6. Dept Reorganization Interactive Toggle
+      const reorgBtn = document.getElementById('toggle-reorg-btn');
+      let reorgToggled = false;
+      if (reorgBtn) {
+        reorgBtn.addEventListener('click', () => {
+          reorgToggled = !reorgToggled;
+          const destTag = document.getElementById('reorg-dest-tag');
+          const destTitle = document.getElementById('reorg-dest-title');
+          const count = document.getElementById('reorg-migrated-count');
+          const hash = document.getElementById('reorg-hash');
+
+          if (reorgToggled) {
+            reorgBtn.textContent = 'Revert to Baseline View';
+            destTag.textContent = 'Transferred Hierarchy (Live)';
+            destTitle.textContent = 'Metropolitan Infrastructure & Works Council';
+            count.textContent = '2,890 Historical Records Intact';
+            hash.textContent = 'Block #WW-99481 Verifiable';
+          } else {
+            reorgBtn.textContent = 'Simulate Dept Restructure';
+            destTag.textContent = 'Future Unified Bureau (2025)';
+            destTitle.textContent = 'Department of Urban Mobility & Pavement';
+            count.textContent = '1,420 of 1,420 Preserved';
+            hash.textContent = 'SHA-256 Validated';
+          }
+        });
+      }
+
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low pt-space-3xl pb-space-2xl"><div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop mb-space-3xl"><div class="md:col-span-5 flex flex-col justify-between pr-space-lg"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><svg class="w-4 h-4 text-on-primary" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24"><path d="M3 9h18M3 15h18M9 3v18M15 3v18" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">WARDWISE</span></div><p class="font-headline-md text-headline-md italic text-primary max-w-md">Designed for cities that listen, act, and take responsibility.</p></div><div class="mt-space-xl flex items-center gap-space-sm"><span class="inline-flex items-center gap-2 px-space-md py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-emerald-600"></span>Municipal Operations Online</span></div></div><div class="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-gutter"><div class="flex flex-col gap-space-sm"><h3 class="font-label-sm text-label-sm uppercase tracking-wider text-secondary mb-space-xs">Civic Architecture</h3><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="platform" href="#">Platform Overview</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="live-city" href="#">Ward Dispatch Map</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="transparency" href="#">Civic Ledger</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="how-it-works" href="#">Response SLA Model</a></div><div class="flex flex-col gap-space-sm"><h3 class="font-label-sm text-label-sm uppercase tracking-wider text-secondary mb-space-xs">Institutional</h3><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="about" href="#">City Charter</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="research" href="#">Urban Research</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="open-data" href="#">Open Data API</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="governance" href="#">Oversight Board</a></div><div class="flex flex-col gap-space-sm"><h3 class="font-label-sm text-label-sm uppercase tracking-wider text-secondary mb-space-xs">Participation</h3><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="report-issue" href="#">Report Issue</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="login" href="#">Official Portal</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="privacy" href="#">Citizen Privacy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="accessibility" href="#">Accessibility</a></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container-high/40 rounded-full px-space-lg py-space-sm"><p class="font-body-sm text-body-sm text-secondary">© 2025 WARDWISE Civic Systems Institute. All public records preserved under civic ordinance.</p><div class="flex items-center gap-space-lg"><a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" data-path="privacy" href="#">Privacy Policy</a><a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" data-path="transparency" href="#">Open Audit</a><a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" data-path="accessibility" href="#">Civic Protocols</a></div></div></div></footer></body></html>

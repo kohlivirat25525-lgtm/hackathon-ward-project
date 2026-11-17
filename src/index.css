@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  /* Core Brand & Editorial Surfaces */
+  --color-canvas: #faf9f5;
+  --color-surface-elevated: #ffffff;
+  --color-surface-muted: #f2f4f8;
+  --color-surface-subtle: #e8ecf2;
+
+  /* Deep Midnight Navy Command Palette */
+  --color-navy-950: #070d19;
+  --color-navy-900: #0b1221;
+  --color-navy-800: #131c31;
+  --color-navy-700: #1e293b;
+
+  /* Primary Interactive Accent — Electric Cobalt Blue */
+  --color-cobalt-700: #1d4ed8;
+  --color-cobalt-600: #1e40af;
+  --color-cobalt-500: #2563eb;
+  --color-cobalt-400: #60a5fa;
+  --color-cobalt-100: #dbeafe;
+
+  /* Typography & Hairlines */
+  --color-ink: #0b1221;
+  --color-ink-muted: #475569;
+  --color-ink-subtle: #64748b;
+  --color-border-hairline: #e2e8f0;
+
+  /* Controlled Operational Statuses */
+  --color-nominal: #059669;
+  --color-warning: #d97706;
+  --color-critical: #dc2626;
+
+  /* 2+1 Typographic System */
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overscroll-behavior-y: none;
+    background-color: #faf9f5;
+    color: #0b1221;
+  }
+
+  :focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

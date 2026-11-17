@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Wardwise Civic Intelligence Platform</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container":"#eeeee8","surface-container-high":"#e9e8e2","on-surface-variant":"#44474a","primary-fixed":"#e2e2e5","surface-tint":"#5d5e61","inverse-on-surface":"#f1f1eb","on-tertiary-fixed":"#00105b","primary":"#000000","tertiary-fixed":"#dee0ff","on-primary-fixed-variant":"#454749","surface":"#fafaf3","secondary-container":"#d9e2fd","on-error-container":"#93000a","surface-variant":"#e3e3dd","surface-container-low":"#f4f4ee","on-primary":"#ffffff","on-secondary-fixed":"#121b2e","outline":"#75777a","on-tertiary-fixed-variant":"#1133bf","surface-container-lowest":"#ffffff","on-background":"#1a1c19","secondary-fixed-dim":"#bdc6e0","secondary":"#555e74","on-secondary-container":"#5b647b","tertiary-fixed-dim":"#bac3ff","surface-container-highest":"#e3e3dd","tertiary":"#000000","surface-dim":"#dadad4","primary-fixed-dim":"#c6c6c9","primary-container":"#1a1c1e","on-primary-fixed":"#1a1c1e","outline-variant":"#c5c6ca","on-secondary":"#ffffff","background":"#fafaf3","tertiary-container":"#00105b","on-tertiary":"#ffffff","on-primary-container":"#838486","on-error":"#ffffff","surface-bright":"#fafaf3","on-tertiary-container":"#5f78ff","inverse-primary":"#c6c6c9","error-container":"#ffdad6","error":"#ba1a1a","on-surface":"#1a1c19","secondary-fixed":"#d9e2fd","inverse-surface":"#2f312d","on-secondary-fixed-variant":"#3e475c"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"space-xs":"0.25rem","space-3xl":"6rem","space-xl":"2.5rem","space-2xl":"4rem",gutter:"1.5rem","gutter-desktop":"2.5rem","margin-tablet":"2.5rem","space-sm":"0.5rem","space-md":"1rem","space-lg":"1.5rem",margin:"1.25rem","margin-desktop":"4.5rem"},fontFamily:{"headline-md":["Playfair Display"],"headline-lg":["Playfair Display"],display:["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"body-sm":["Manrope"],"body-lg":["Manrope"],"display-mobile":["Playfair Display"],"label-sm":["Manrope"],"title-md":["Manrope"],"headline-sm":["Manrope"],"label-md":["Manrope"],"body-md":["Manrope"]},fontSize:{"headline-md":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.015em",fontWeight:"400"}],display:["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"400"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"400"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"display-mobile":["38px",{lineHeight:"44px",letterSpacing:"-0.015em",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.06em",fontWeight:"600"}],"title-md":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-fixed"><header class="fixed top-0 inset-x-0 z-50 pt-space-md pointer-events-none"><div class="max-w-[1380px] mx-auto px-margin lg:px-margin-desktop"><div class="h-16 px-space-md lg:px-space-lg bg-surface-container-lowest/90 backdrop-blur-xl rounded-full shadow-[0_8px_30px_rgba(21,23,25,0.05)] pointer-events-auto flex items-center justify-between transition-all"><a class="flex items-center gap-space-sm group" data-path="platform" href="#"><div class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-primary transition-transform group-hover:scale-95"><span class="material-symbols-outlined text-[18px]">grid_view</span></div><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary">WARDWISE</span></a><nav class="hidden md:flex items-center gap-1 bg-surface-container-lowest p-1 rounded-full" data-active-classes="bg-surface-container-low text-primary font-bold"><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="platform" href="#">Platform</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="live-city" href="#">Live City</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="transparency" href="#">Transparency</a></nav><div class="flex items-center gap-space-sm"><a class="px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all" data-path="sign-in" href="#">Sign In</a><a class="relative inline-flex items-center gap-2 bg-primary text-on-primary px-space-lg py-2 rounded-full font-label-md text-label-md hover:bg-secondary transition-all shadow-[0_4px_14px_rgba(0,0,0,0.1)]" data-path="report-an-issue" href="#"><span class="w-2 h-2 rounded-full bg-surface-bright animate-pulse"></span><span>Report an Issue</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-280px)]"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[720px] h-[340px] bg-secondary-container/30 blur-3xl pointer-events-none rounded-full"></div>
+<div class="absolute top-24 right-10 w-72 h-72 bg-tertiary-fixed/20 blur-2xl pointer-events-none rounded-full"></div>
+<div class="max-w-[1380px] mx-auto px-margin lg:px-margin-desktop pt-8 pb-12">
+<!-- Section 1: Editorial Introduction -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-gutter-desktop items-end pb-12">
+<div class="lg:col-span-8 space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Citizen Reporting / 01</span>
+</div>
+<h1 class="font-display text-display text-primary tracking-tight">
+            See something wrong? <br class="hidden sm:inline"/>
+            Let's <span class="italic font-headline-lg font-normal font-serif text-secondary">make it right.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            From broken streetlights to overflowing garbage, report the problems around you. We'll connect your issue with the municipal agency responsible for repairing it.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-2.5">
+<div class="flex items-center gap-3 p-3 rounded-DEFAULT bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-primary leading-tight">Simple Reporting</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Guided workflow under 2 minutes</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-DEFAULT bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-primary leading-tight">Algorithmic Routing</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct ward &amp; department allocation</p>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-DEFAULT bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">fact_check</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-primary leading-tight">Public Accountability</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cryptographic ticket verification</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Stepper / Progress Rail -->
+<section class="sticky top-20 z-40 bg-surface/90 backdrop-blur-md py-4 mb-8">
+<div class="bg-surface-container-lowest rounded-full p-2 shadow-sm flex items-center justify-between gap-1 overflow-x-auto">
+<!-- Step 1 Indicator -->
+<button class="step-nav-btn flex items-center gap-2 px-4 py-2 rounded-full transition-all bg-primary text-on-primary" id="step-nav-1" onclick="goToStep(1)" type="button">
+<span class="w-5 h-5 rounded-full flex items-center justify-center text-label-sm font-label-sm bg-surface-container-lowest text-primary" id="step-badge-1">1</span>
+<span class="font-label-md text-label-md whitespace-nowrap">Category</span>
+</button>
+<span class="h-0.5 flex-1 min-w-4 bg-surface-container-high step-line" id="line-1"></span>
+<!-- Step 2 Indicator -->
+<button class="step-nav-btn flex items-center gap-2 px-4 py-2 rounded-full transition-all text-on-surface-variant hover:bg-surface-container-low" id="step-nav-2" onclick="goToStep(2)" type="button">
+<span class="w-5 h-5 rounded-full flex items-center justify-center text-label-sm font-label-sm bg-surface-container text-on-surface" id="step-badge-2">2</span>
+<span class="font-label-md text-label-md whitespace-nowrap">Details</span>
+</button>
+<span class="h-0.5 flex-1 min-w-4 bg-surface-container-high step-line" id="line-2"></span>
+<!-- Step 3 Indicator -->
+<button class="step-nav-btn flex items-center gap-2 px-4 py-2 rounded-full transition-all text-on-surface-variant hover:bg-surface-container-low" id="step-nav-3" onclick="goToStep(3)" type="button">
+<span class="w-5 h-5 rounded-full flex items-center justify-center text-label-sm font-label-sm bg-surface-container text-on-surface" id="step-badge-3">3</span>
+<span class="font-label-md text-label-md whitespace-nowrap">Photos</span>
+</button>
+<span class="h-0.5 flex-1 min-w-4 bg-surface-container-high step-line" id="line-3"></span>
+<!-- Step 4 Indicator -->
+<button class="step-nav-btn flex items-center gap-2 px-4 py-2 rounded-full transition-all text-on-surface-variant hover:bg-surface-container-low" id="step-nav-4" onclick="goToStep(4)" type="button">
+<span class="w-5 h-5 rounded-full flex items-center justify-center text-label-sm font-label-sm bg-surface-container text-on-surface" id="step-badge-4">4</span>
+<span class="font-label-md text-label-md whitespace-nowrap">Location</span>
+</button>
+<span class="h-0.5 flex-1 min-w-4 bg-surface-container-high step-line" id="line-4"></span>
+<!-- Step 5 Indicator -->
+<button class="step-nav-btn flex items-center gap-2 px-4 py-2 rounded-full transition-all text-on-surface-variant hover:bg-surface-container-low" id="step-nav-5" onclick="goToStep(5)" type="button">
+<span class="w-5 h-5 rounded-full flex items-center justify-center text-label-sm font-label-sm bg-surface-container text-on-surface" id="step-badge-5">5</span>
+<span class="font-label-md text-label-md whitespace-nowrap">Review</span>
+</button>
+</div>
+</section>
+<!-- Main Form Stage Container -->
+<div class="relative min-h-[560px]" id="reporting-stage">
+<!-- STEP 1: CATEGORY SELECTION -->
+<section class="step-view space-y-6" id="step-view-1">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Phase 01 / Categorization</p>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">What needs attention?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Select the primary civic classification for accurate municipal dispatch.</p>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant self-start">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+<span class="font-label-sm text-label-sm">Select 1 category to proceed</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="category-grid">
+<!-- Potholes -->
+<button class="cat-card group text-left p-6 rounded-DEFAULT bg-surface-container-lowest hover:bg-surface-container-low shadow-sm transition-all duration-200 flex flex-col justify-between h-[200px] cursor-pointer focus:outline-none" data-cat="Potholes" onclick="selectCategory('Potholes', 'Road surface cavities, asphalt collapse, rutting', 'water_damage', 'Public Works (Roads)')" type="button">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:scale-105 transition-transform cat-icon-box">
+<span class="material-symbols-outlined text-[24px]">construction</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 cat-id">01</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Potholes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Road surface cavities, asphalt collapse, rutting</p>
+</div>
+</button>
+<!-- Garbage -->
+<button class="cat-card group text-left p-6 rounded-DEFAULT bg-surface-container-lowest hover:bg-surface-container-low shadow-sm transition-all duration-200 flex flex-col justify-between h-[200px] cursor-pointer focus:outline-none" data-cat="Garbage" onclick="selectCategory('Garbage', 'Overflowing bins, uncollected waste, illegal dumping', 'delete', 'Waste Management &amp; Hygiene')" type="button">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:scale-105 transition-transform cat-icon-box">
+<span class="material-symbols-outlined text-[24px]">delete</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 cat-id">02</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Garbage</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Overflowing bins, uncollected waste, illegal dumping</p>
+</div>
+</button>
+<!-- Streetlight -->
+<button class="cat-card group text-left p-6 rounded-DEFAULT bg-surface-container-lowest hover:bg-surface-container-low shadow-sm transition-all duration-200 flex flex-col justify-between h-[200px] cursor-pointer focus:outline-none" data-cat="Streetlight" onclick="selectCategory('Streetlight', 'Flickering, knocked down, dark corridor bulb failures', 'wb_incandescent', 'Metropolitan Grid &amp; Lighting')" type="button">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:scale-105 transition-transform cat-icon-box">
+<span class="material-symbols-outlined text-[24px]">lightbulb</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 cat-id">03</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Streetlight</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Flickering, knocked down, dark corridor bulb failures</p>
+</div>
+</button>
+<!-- Water Leakage -->
+<button class="cat-card group text-left p-6 rounded-DEFAULT bg-surface-container-lowest hover:bg-surface-container-low shadow-sm transition-all duration-200 flex flex-col justify-between h-[200px] cursor-pointer focus:outline-none" data-cat="Water Leakage" onclick="selectCategory('Water Leakage', 'Main pipe rupture, valve leaks, hydrants, pressure drop', 'water_drop', 'Municipal Utilities Water Board')" type="button">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:scale-105 transition-transform cat-icon-box">
+<span class="material-symbols-outlined text-[24px]">water_drop</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 cat-id">04</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Water Leakage</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Main pipe rupture, valve leaks, hydrants, pressure drop</p>
+</div>
+</button>
+<!-- Drainage -->
+<button class="cat-card group text-left p-6 rounded-DEFAULT bg-surface-container-lowest hover:bg-surface-container-low shadow-sm transition-all duration-200 flex flex-col justify-between h-[200px] cursor-pointer focus:outline-none" data-cat="Drainage" onclick="selectCategory('Drainage', 'Clogged storm drains, flooded underpasses, gutter blocks', 'waves', 'Stormwater &amp; Flood Control')" type="button">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:scale-105 transition-transform cat-icon-box">
+<span class="material-symbols-outlined text-[24px]">waves</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 cat-id">05</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Drainage</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Clogged storm drains, flooded underpasses, gutter blocks</p>
+</div>
+</button>
+<!-- Road Damage -->
+<button class="cat-card group text-left p-6 rounded-DEFAULT bg-surface-container-lowest hover:bg-surface-container-low shadow-sm transition-all duration-200 flex flex-col justify-between h-[200px] cursor-pointer focus:outline-none" data-cat="Road Damage" onclick="selectCategory('Road Damage', 'Missing curb stones, guard rail impact, sidewalk fissures', 'alt_route', 'Civil Pavement Authority')" type="button">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:scale-105 transition-transform cat-icon-box">
+<span class="material-symbols-outlined text-[24px]">alt_route</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 cat-id">06</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Road Damage</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Missing curb stones, guard rail impact, sidewalk fissures</p>
+</div>
+</button>
+<!-- Public Sanitation -->
+<button class="cat-card group text-left p-6 rounded-DEFAULT bg-surface-container-lowest hover:bg-surface-container-low shadow-sm transition-all duration-200 flex flex-col justify-between h-[200px] cursor-pointer focus:outline-none" data-cat="Public Sanitation" onclick="selectCategory('Public Sanitation', 'Public restroom failures, hazardous litter, bio clean', 'clean_hands', 'Urban Health &amp; Environmental Health')" type="button">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:scale-105 transition-transform cat-icon-box">
+<span class="material-symbols-outlined text-[24px]">clean_hands</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 cat-id">07</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Public Sanitation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Public restroom failures, hazardous litter, bio clean</p>
+</div>
+</button>
+<!-- Other Issue -->
+<button class="cat-card group text-left p-6 rounded-DEFAULT bg-surface-container-lowest hover:bg-surface-container-low shadow-sm transition-all duration-200 flex flex-col justify-between h-[200px] cursor-pointer focus:outline-none" data-cat="Other Issue" onclick="selectCategory('Other Issue', 'Municipal trees, parks, graffiti, code violations', 'more_horiz', 'Civic General Registry')" type="button">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:scale-105 transition-transform cat-icon-box">
+<span class="material-symbols-outlined text-[24px]">more_horiz</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 cat-id">08</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-1">Other Issue</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Municipal trees, parks, graffiti, code violations</p>
+</div>
+</button>
+</div>
+<!-- Bottom Control Bar -->
+<div class="flex items-center justify-between pt-6">
+<div class="font-body-sm text-body-sm text-on-surface-variant" id="cat-selection-notice">
+              No category selected yet.
+            </div>
+<button class="px-8 py-3 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-all shadow-md flex items-center gap-2" onclick="validateStep1()" type="button">
+<span>Continue to Details</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- STEP 2: DETAILS & SEVERITY -->
+<section class="step-view hidden space-y-6" id="step-view-2">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Phase 02 / Scope &amp; Context</p>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Tell us what happened.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Provide clear narrative context so emergency or field inspectors can prepare equipment.</p>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed" id="step2-cat-pill">
+<span class="material-symbols-outlined text-[16px]">folder_open</span>
+<span class="font-label-sm text-label-sm" id="step2-cat-name">Potholes</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<div class="lg:col-span-8 space-y-6 bg-surface-container-lowest p-6 lg:p-8 rounded-DEFAULT shadow-sm">
+<!-- Issue Title Input -->
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-primary" for="issue-title">Issue Title <span class="text-error">*</span></label>
+<span class="font-label-sm text-label-sm text-on-surface-variant"><span id="title-count">0</span>/80</span>
+</div>
+<input class="w-full px-4 py-3 rounded-DEFAULT bg-surface-container-low text-primary font-body-md text-body-md placeholder:text-on-surface-variant/60 focus:bg-surface-container-lowest focus:outline-none transition-all shadow-inner" id="issue-title" maxlength="80" oninput="handleTitleInput(this)" placeholder="e.g., Deep pavement crater in eastbound transit corridor" type="text"/>
+<p class="hidden font-body-sm text-body-sm text-error" id="title-error">Please provide a descriptive title (at least 6 characters).</p>
+</div>
+<!-- Issue Description -->
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md text-primary" for="issue-desc">Detailed Description <span class="text-error">*</span></label>
+<span class="font-label-sm text-label-sm text-on-surface-variant"><span id="desc-count">0</span>/600</span>
+</div>
+<textarea class="w-full px-4 py-3 rounded-DEFAULT bg-surface-container-low text-primary font-body-md text-body-md placeholder:text-on-surface-variant/60 focus:bg-surface-container-lowest focus:outline-none transition-all shadow-inner resize-y" id="issue-desc" maxlength="600" oninput="handleDescInput(this)" placeholder="Describe dimensions, nearby landmarks, how long it has been present, and any disruption to pedestrians, cyclists, or vehicular traffic..." rows="5"></textarea>
+<p class="hidden font-body-sm text-body-sm text-error" id="desc-error">Please provide sufficient detail (at least 20 characters).</p>
+</div>
+<!-- Date Observed -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+<div class="space-y-2">
+<label class="font-title-md text-title-md text-primary" for="date-observed">Date First Observed</label>
+<input class="w-full px-4 py-2.5 rounded-DEFAULT bg-surface-container-low text-primary font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none shadow-inner" id="date-observed" type="date"/>
+</div>
+<div class="space-y-2">
+<label class="font-title-md text-title-md text-primary" for="time-window">Approximate Time</label>
+<select class="w-full px-4 py-2.5 rounded-DEFAULT bg-surface-container-low text-primary font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none shadow-inner" id="time-window">
+<option value="Morning (06:00 - 12:00)">Morning (06:00 - 12:00)</option>
+<option selected="" value="Afternoon (12:00 - 18:00)">Afternoon (12:00 - 18:00)</option>
+<option value="Evening (18:00 - 22:00)">Evening (18:00 - 22:00)</option>
+<option value="Night (22:00 - 06:00)">Night (22:00 - 06:00)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Severity Panel -->
+<div class="lg:col-span-4 space-y-4">
+<div class="bg-surface-container-lowest p-6 rounded-DEFAULT shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-primary">Severity Rating</h3>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Severity determines automated queue position and SLA response timelines under Municipal Code § 14-802.
+                </p>
+<!-- Severity Buttons -->
+<div class="space-y-2.5" id="severity-group">
+<button class="sev-btn w-full p-3 rounded-DEFAULT bg-surface-container-low text-left transition-all flex items-start gap-3 focus:outline-none" data-sev="Low" onclick="selectSeverity('Low', 'Routine maintenance backlog, cosmetic issue', 'bg-surface-container')" type="button">
+<span class="w-3 h-3 rounded-full bg-outline-variant mt-1.5 shrink-0 sev-dot"></span>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-primary">Low Severity</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5-7 Days SLA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Routine maintenance, minor cosmetic fault</p>
+</div>
+</button>
+<button class="sev-btn w-full p-3 rounded-DEFAULT bg-surface-container text-left transition-all flex items-start gap-3 focus:outline-none ring-1 ring-primary/20" data-sev="Medium" onclick="selectSeverity('Medium', 'Impacts daily flow, pedestrian impedance', 'bg-surface-container')" type="button">
+<span class="w-3 h-3 rounded-full bg-secondary-fixed-dim mt-1.5 shrink-0 sev-dot"></span>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-primary">Medium Severity</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">48h SLA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Impacts daily flow, pedestrian inconvenience</p>
+</div>
+</button>
+<button class="sev-btn w-full p-3 rounded-DEFAULT bg-surface-container-low text-left transition-all flex items-start gap-3 focus:outline-none" data-sev="High" onclick="selectSeverity('High', 'Immediate safety hazard, vehicular hazard', 'bg-surface-container')" type="button">
+<span class="w-3 h-3 rounded-full bg-on-tertiary-container mt-1.5 shrink-0 sev-dot"></span>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-primary">High Severity</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">24h SLA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Immediate safety hazard, wheel damage risk</p>
+</div>
+</button>
+<button class="sev-btn w-full p-3 rounded-DEFAULT bg-surface-container-low text-left transition-all flex items-start gap-3 focus:outline-none" data-sev="Critical" onclick="selectSeverity('Critical', 'Emergency structural failure, danger to life', 'bg-surface-container')" type="button">
+<span class="w-3 h-3 rounded-full bg-error mt-1.5 shrink-0 sev-dot"></span>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-primary">Critical / Danger</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">&lt;4h Emergency</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Impending collapse, gas odor, live cables</p>
+</div>
+</button>
+</div>
+</div>
+<!-- Municipal Routing Insight Box -->
+<div class="p-5 rounded-DEFAULT bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-[20px] text-primary shrink-0 mt-0.5">psychology</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Natural Language Processing (NLP) models will cross-reference your text description with existing reports to merge duplicates automatically.
+                </p>
+</div>
+</div>
+</div>
+<!-- Bottom Control Bar -->
+<div class="flex items-center justify-between pt-6">
+<button class="px-6 py-3 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md hover:bg-surface-container transition-all flex items-center gap-2 shadow-sm" onclick="goToStep(1)" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Category</span>
+</button>
+<button class="px-8 py-3 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-all shadow-md flex items-center gap-2" onclick="validateStep2()" type="button">
+<span>Continue to Photos</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- STEP 3: PHOTO EVIDENCE -->
+<section class="step-view hidden space-y-6" id="step-view-3">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Phase 03 / Photographic Evidence</p>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Show us what you're seeing.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">High-resolution imagery expedites triage and allows engineers to assess equipment requirements.</p>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[16px]">add_a_photo</span>
+<span class="font-label-sm text-label-sm" id="photo-count-badge">2 Attached</span>
+</div>
+</div>
+<!-- Drop Area -->
+<div class="bg-surface-container-lowest p-8 rounded-DEFAULT shadow-sm space-y-6">
+<div class="p-10 rounded-DEFAULT bg-surface-container-low text-center flex flex-col items-center justify-center cursor-pointer transition-all hover:bg-surface-container" id="drop-zone" onclick="simulateFileUpload()">
+<input accept="image/*" class="hidden" id="file-input" multiple="" onchange="handleFileSelection(event)" type="file"/>
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm mb-4">
+<span class="material-symbols-outlined text-[32px]">cloud_upload</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Click to upload or drag images here</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md mb-3">
+                Supports JPG, PNG, WEBP, and HEIC up to 10MB each. EXIF metadata will be scanned for coordinates.
+              </p>
+<button class="px-5 py-2 rounded-full bg-surface-container-highest text-primary font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all" type="button">
+                Browse Files
+              </button>
+</div>
+<!-- Upload Previews Strip -->
+<div>
+<div class="flex items-center justify-between mb-3">
+<p class="font-title-md text-title-md text-primary">Attached Media Files (<span id="photo-counter">2</span>/4)</p>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-error transition-colors" onclick="clearAllPhotos()" type="button">Clear All</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4" id="photo-preview-grid">
+<!-- Sample Photo 1 -->
+<div class="photo-preview-card relative rounded-DEFAULT overflow-hidden group shadow-sm bg-surface-container-low" data-filename="asphalt_cavity_01.jpg">
+<div class="h-44 w-full bg-cover bg-center" data-alt="Close up architectural detail of damaged urban asphalt street showing sharp fissured cavity edges with exposed gravel under natural morning sunlight, clean civil documentary perspective" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQ9F0ar2Nids2HdTDJYMAdwjLOnpOIKtHaefJZYUPJuHwNKRF6toGGzoNCkbL_qf4ZElBbSB98pnthAIlMolNA1CL5RflGCC5Ejbc_rhYtQR7Kfyqq930sObqELaemWv8thhkudaQmFW6uYyzMmEqZzRzQeIGd7k0GkBu_YDbrr_y7dkrjnGoaZOEI8r2FQlQkWVdiqVL7ItJQcpWiy7CyH454oyffPV6mnClmGYTz')"></div>
+<div class="p-3 bg-surface-container-lowest">
+<p class="font-label-md text-label-md text-primary truncate">asphalt_cavity_01.jpg</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">2.4 MB • GPS Embedded</p>
+</div>
+<button class="absolute top-2 right-2 w-7 h-7 rounded-full bg-primary/80 hover:bg-error text-on-primary flex items-center justify-center transition-all opacity-80 group-hover:opacity-100" onclick="removePhoto(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<!-- Sample Photo 2 -->
+<div class="photo-preview-card relative rounded-DEFAULT overflow-hidden group shadow-sm bg-surface-container-low" data-filename="corridor_distance_view.jpg">
+<div class="h-44 w-full bg-cover bg-center" data-alt="Wide perspective of an urban city avenue intersection showing pedestrian crosswalk, sidewalk curbs, and municipal architecture on a crisp clear morning, soft light with architectural precision" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBOnM-v__BXe1pWOiSvxa7NI2i6lrnSxj0VN0pcyw-4w9CNx0vT1p3XIzIZqpcySqNW0ML8ZPxGGDl3dBtx1vqA5cT53IS1uTKeZ0VBJkL3kvmmgHFUaXj9oBgEl_L0-dggNo8a0SNWnZ7TKThbPSD08ZPGGZlXDHP2RT5iaHgRo_bDKLj5UzyPRaQHJmfw9jq1fEjKnZ10P_1KGO0Wouujllc7HdRW61978jeEL42j')"></div>
+<div class="p-3 bg-surface-container-lowest">
+<p class="font-label-md text-label-md text-primary truncate">corridor_distance_view.jpg</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">3.1 MB • Ward 04 Tag</p>
+</div>
+<button class="absolute top-2 right-2 w-7 h-7 rounded-full bg-primary/80 hover:bg-error text-on-primary flex items-center justify-center transition-all opacity-80 group-hover:opacity-100" onclick="removePhoto(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- EXIF & Privacy Notice -->
+<div class="flex items-start gap-3 p-4 rounded-DEFAULT bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px] text-secondary shrink-0 mt-0.5">verified_user</span>
+<div class="space-y-1">
+<p class="font-title-md text-title-md text-primary">Privacy &amp; EXIF Protection</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Photos should clearly frame the infrastructure failure. Facial profiles and private automotive license plates are automatically masked via server-side blur before entering the public municipal transparency ledger.
+                </p>
+</div>
+</div>
+</div>
+<!-- Bottom Control Bar -->
+<div class="flex items-center justify-between pt-6">
+<button class="px-6 py-3 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md hover:bg-surface-container transition-all flex items-center gap-2 shadow-sm" onclick="goToStep(2)" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Details</span>
+</button>
+<button class="px-8 py-3 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-all shadow-md flex items-center gap-2" onclick="validateStep3()" type="button">
+<span>Continue to Location</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- STEP 4: GEOGRAPHIC LOCATION -->
+<section class="step-view hidden space-y-6" id="step-view-4">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Phase 04 / Geospatial Anchor</p>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Where is the problem?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Pinpoint the civic parcel to enable rapid routing to the correct district maintenance crew.</p>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">explore</span>
+<span class="font-label-sm text-label-sm" id="header-ward-badge">Ward 04 — Central Civic</span>
+</div>
+</div>
+<!-- Search & Controls Bar -->
+<div class="bg-surface-container-lowest p-4 rounded-DEFAULT shadow-sm flex flex-col sm:flex-row items-center gap-3">
+<div class="relative flex-1 w-full">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 rounded-full bg-surface-container-low text-primary font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none shadow-inner" id="address-input" oninput="handleAddressChange(this.value)" placeholder="Search municipal address, intersection or parcel ID..." type="text" value="742 West Highland Ave, Ward 04"/>
+</div>
+<button class="w-full sm:w-auto px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-all shrink-0 flex items-center justify-center gap-2 shadow-sm" onclick="useCurrentLocation()" type="button">
+<span class="material-symbols-outlined text-[18px]">my_location</span>
+<span>Use Current GPS</span>
+</button>
+</div>
+<!-- Simulated Map Viewport with Draggable Pin -->
+<div class="relative w-full h-[380px] rounded-DEFAULT overflow-hidden shadow-sm bg-surface-container-low">
+<!-- Simulated Map Canvas (Google Maps Static Pipeline integration) -->
+<div class="w-full h-full bg-cover bg-center transition-all duration-300 relative cursor-crosshair" data-location="West Highland Avenue, Chicago, IL" id="interactive-map-canvas" onclick="handleMapClick(event)" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZAGdmbhnin6ZT3UYpy4tKX4gzmqcjuyhjVBq2k8Wq1xVvFQUziAelP7TnGb89OBiz-DIuuj-lXvtCoTjJJiLz5u_vsO0LEuLBWXMq8TVIHl_oYvZ9aCBWAmrj_zbHDskQeexEyhT4pOF0KrfSeCf2n1lD_wKsQu9kX__okrGu5Gy6UjLuzlnxNXXnPwkzhL7kf0ICaqh97W6wjOnpgCSKDfHtA4Lp6uJAOHHpmJ9K')">
+<!-- Subtle Cartographic Grid Lines (SVG Overlay) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="60" id="civic-grid" patternunits="userSpaceOnUse" width="60">
+<path d="M 60 0 L 0 0 0 60" fill="none" stroke="currentColor" stroke-width="1"></path>
+</pattern>
+</defs>
+<rect class="text-primary" fill="url(#civic-grid)" height="100%" width="100%"></rect>
+</svg>
+<!-- Interactive Floating Pin Marker -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full transition-all duration-200 pointer-events-none flex flex-col items-center" id="map-pin">
+<div class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-lg whitespace-nowrap mb-1 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span>
+<span id="pin-label">742 W Highland Ave</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-xl ring-4 ring-surface-container-lowest/80">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div class="w-2 h-2 rounded-full bg-primary/40 -mt-1 blur-[1px]"></div>
+</div>
+<!-- Map Controls Overlay -->
+<div class="absolute bottom-4 right-4 flex flex-col gap-1.5 bg-surface-container-lowest/90 backdrop-blur-md p-1.5 rounded-DEFAULT shadow-md pointer-events-auto">
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors" onclick="zoomMap(1)" title="Zoom In" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors" onclick="zoomMap(-1)" title="Zoom Out" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-surface-container-high transition-colors" onclick="recenterMap()" title="Recenter" type="button">
+<span class="material-symbols-outlined text-[18px]">center_focus_strong</span>
+</button>
+</div>
+<!-- Real-time Geo Coordinates Bar Overlay -->
+<div class="absolute top-4 left-4 bg-surface-container-lowest/95 backdrop-blur-md px-3.5 py-2 rounded-full shadow-md flex items-center gap-3">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">pin_drop</span>
+<span class="font-label-sm text-label-sm text-primary" id="geo-coords">41.8827° N, 87.6233° W</span>
+</div>
+<span class="w-1 h-3 bg-surface-container-highest rounded-full"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono" id="geo-accuracy">Acc: ±2.4m</span>
+</div>
+</div>
+</div>
+<!-- Ward Boundary Metadata Card -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="p-4 rounded-DEFAULT bg-surface-container-lowest shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-fixed shrink-0">
+<span class="material-symbols-outlined text-[20px]">apartment</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Detected Jurisdiction</p>
+<p class="font-title-md text-title-md text-primary" id="meta-ward">Ward 04 — Central Civic</p>
+</div>
+</div>
+<div class="p-4 rounded-DEFAULT bg-surface-container-lowest shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Ward Alderperson</p>
+<p class="font-title-md text-title-md text-primary">Elena Rostova (District 04)</p>
+</div>
+</div>
+<div class="p-4 rounded-DEFAULT bg-surface-container-lowest shadow-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Field Depot</p>
+<p class="font-title-md text-title-md text-primary">Yard 3 — Roosevelt &amp; Halsted</p>
+</div>
+</div>
+</div>
+<!-- Bottom Control Bar -->
+<div class="flex items-center justify-between pt-6">
+<button class="px-6 py-3 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md hover:bg-surface-container transition-all flex items-center gap-2 shadow-sm" onclick="goToStep(3)" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Photos</span>
+</button>
+<button class="px-8 py-3 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-all shadow-md flex items-center gap-2" onclick="validateStep4()" type="button">
+<span>Continue to Review</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- STEP 5: EDITORIAL REVIEW & DISPATCH -->
+<section class="step-view hidden space-y-6" id="step-view-5">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Phase 05 / Final Audit</p>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Let's make sure everything is correct.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Review the municipal docket before committing this report to the public registry.</p>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm">Docket Ready for Dispatch</span>
+</div>
+</div>
+<!-- Comprehensive Review Sheet -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Main Content Summary -->
+<div class="lg:col-span-8 space-y-6">
+<!-- Card: Category & Title -->
+<div class="bg-surface-container-lowest p-6 lg:p-8 rounded-DEFAULT shadow-sm space-y-6">
+<div class="flex items-center justify-between pb-4 border-b border-surface-container-high/60">
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm" id="review-cat-badge">Potholes</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm" id="review-sev-badge">Medium Severity</span>
+</div>
+<button class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors flex items-center gap-1" onclick="goToStep(1)" type="button">
+<span class="material-symbols-outlined text-[14px]">edit</span>
+<span>Edit Category</span>
+</button>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary tracking-tight" id="review-title">Deep pavement crater in eastbound transit corridor</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 whitespace-pre-wrap leading-relaxed" id="review-desc">
+                    Severe asphalt deterioration approximately 35cm deep located near the Highland pedestrian crosswalk. Poses serious hazard to cyclists and bus suspensions during morning rush.
+                  </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+<div class="p-3 rounded-DEFAULT bg-surface-container-low">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Observed Date &amp; Window</p>
+<p class="font-title-md text-title-md text-primary" id="review-date">Today • Afternoon</p>
+</div>
+<div class="p-3 rounded-DEFAULT bg-surface-container-low">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Responsible Agency</p>
+<p class="font-title-md text-title-md text-primary" id="review-agency">Public Works (Roads)</p>
+</div>
+</div>
+</div>
+<!-- Card: Location Summary -->
+<div class="bg-surface-container-lowest p-6 lg:p-8 rounded-DEFAULT shadow-sm space-y-4">
+<div class="flex items-center justify-between pb-3 border-b border-surface-container-high/60">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Geographic Anchor</span>
+<button class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors flex items-center gap-1" onclick="goToStep(4)" type="button">
+<span class="material-symbols-outlined text-[14px]">edit</span>
+<span>Change Pin</span>
+</button>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-primary" id="review-address">742 West Highland Ave, Ward 04</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="review-coords">41.8827° N, 87.6233° W (Ward 04 Central Civic)</p>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm self-start sm:self-center">Verified Parcel</span>
+</div>
+</div>
+<!-- Card: Attached Photos Strip -->
+<div class="bg-surface-container-lowest p-6 lg:p-8 rounded-DEFAULT shadow-sm space-y-4">
+<div class="flex items-center justify-between pb-3 border-b border-surface-container-high/60">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Photographic Attachments</span>
+<button class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors flex items-center gap-1" onclick="goToStep(3)" type="button">
+<span class="material-symbols-outlined text-[14px]">edit</span>
+<span>Add/Remove</span>
+</button>
+</div>
+<div class="flex items-center gap-4 overflow-x-auto pb-2" id="review-photos-strip">
+<div class="w-24 h-24 rounded-DEFAULT bg-surface-container-low shrink-0 overflow-hidden shadow-sm">
+<div class="w-full h-full bg-cover bg-center" data-alt="Close up architectural detail of damaged urban asphalt street showing sharp fissured cavity edges with exposed gravel under natural morning sunlight, clean civil documentary perspective" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCNUVDpplD3mHSbtuFwFM8aKu-d-69MbdlqLC2XPeY7TyFU_x7GbCs_ShdRte0WzoeULROkI6ImQPmKjpgLNvwWGPLtUlsQITsdEfHU6is--6nMcX_qXjRX5yZu2NX2X5BHtX182xYw9aH8g9S7q0yoN9uIzW-zY4d8ikokXTr7bE0_P1GiKJtUkc8VQ56Jvp8e8p9LmrK6e_9g4VYRKZs7NuVATUsQUDIQBIA2leM5')"></div>
+</div>
+<div class="w-24 h-24 rounded-DEFAULT bg-surface-container-low shrink-0 overflow-hidden shadow-sm">
+<div class="w-full h-full bg-cover bg-center" data-alt="Wide perspective of an urban city avenue intersection showing pedestrian crosswalk, sidewalk curbs, and municipal architecture on a crisp clear morning, soft light with architectural precision" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDBUqeww5ywdjRyVCiArFlZA2JPhpQZj7ujoQ8SSHHt8Z6dBeO6Uib62D0_0Jzwxg4CIIbuohyyikJZZCrKaEIoob6l91V2Ex6gQC0vkEw-5uK7Ch46vwORP5ymwlK3B3vwh1mVUPN-DLeA-5lBwN6z-g1X4zhoEaEKPYtIcipr7V5H96d9mE6ziBDCbOCiWBTMKUnZcCsbGjN8iJewgNdNclwScO3PcCHILZYPpS_4')"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Sidebar: Privacy Preferences & Submission CTA -->
+<div class="lg:col-span-4 space-y-6">
+<!-- Privacy & Ledger Settings -->
+<div class="bg-surface-container-lowest p-6 rounded-DEFAULT shadow-sm space-y-4">
+<h4 class="font-title-md text-title-md text-primary">Public Registry Options</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Control how your report surfaces on the public Wardwise Live City transparency portal.
+                </p>
+<div class="space-y-3 pt-2">
+<label class="flex items-start gap-3 p-3 rounded-DEFAULT bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
+<input checked="" class="mt-1 accent-primary" name="privacy-pref" type="radio" value="public"/>
+<div>
+<p class="font-label-md text-label-md text-primary">Public Verified Citizen</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Visible to neighbors, allows collaborative status upvotes</p>
+</div>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-DEFAULT bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
+<input class="mt-1 accent-primary" name="privacy-pref" type="radio" value="anonymous"/>
+<div>
+<p class="font-label-md text-label-md text-primary">Anonymous Submission</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Identity masked; issue is tracked purely by ticket hash</p>
+</div>
+</label>
+</div>
+<div class="pt-2">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="rounded accent-primary" id="notify-updates" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-primary">Email me SMS/Webhook updates when crew is dispatched</span>
+</label>
+</div>
+</div>
+<!-- Dispatch Button Box -->
+<div class="bg-primary text-on-primary p-6 rounded-DEFAULT shadow-xl space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-primary-container">Dispatch Commitment</span>
+<span class="material-symbols-outlined text-[20px] text-surface-bright">shield</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed">
+                  By submitting, you certify that this municipal notification represents an authentic observation in Ward 04 under Code § 14-802.
+                </p>
+<button class="w-full py-4 px-6 rounded-full bg-surface-container-lowest text-primary hover:bg-primary-fixed font-title-md text-title-md transition-all flex items-center justify-center gap-2 shadow-lg" id="submit-report-btn" onclick="executeSubmission()" type="button">
+<span id="submit-btn-text">Submit Report</span>
+<span class="material-symbols-outlined text-[20px]" id="submit-btn-icon">arrow_forward</span>
+<div class="hidden w-5 h-5 border-2 border-primary border-t-transparent rounded-full animate-spin" id="submit-spinner"></div>
+</button>
+</div>
+<!-- Draft Saving Indicator -->
+<div class="p-3 text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Session auto-saved to secure local vault</span>
+</p>
+</div>
+</div>
+</div>
+<!-- Bottom Back Bar -->
+<div class="flex items-center justify-between pt-6">
+<button class="px-6 py-3 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md hover:bg-surface-container transition-all flex items-center gap-2 shadow-sm" onclick="goToStep(4)" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Location</span>
+</button>
+</div>
+</section>
+<!-- SECTION 4: EXTRAORDINARY POST-SUBMISSION SUCCESS SCREEN -->
+<section class="hidden space-y-8 py-8 animate-fadeIn" id="success-screen">
+<div class="text-center max-w-2xl mx-auto space-y-4">
+<div class="w-20 h-20 rounded-full bg-secondary-container text-on-secondary-fixed mx-auto flex items-center justify-center shadow-lg mb-2">
+<span class="material-symbols-outlined text-[44px]">task_alt</span>
+</div>
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container text-primary">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Docket Cryptographically Registered</span>
+</div>
+<h2 class="font-display text-display text-primary tracking-tight">Your report is in motion.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+              Thank you for helping make your city better. Your complaint has been recorded on the civic telemetry ledger and allocated to active field operations.
+            </p>
+</div>
+<!-- Ticket Confirmation Broadsheet Card -->
+<div class="max-w-3xl mx-auto bg-surface-container-lowest rounded-DEFAULT p-8 lg:p-10 shadow-lg space-y-8">
+<!-- Ticket Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-surface-container-high">
+<div>
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Unique Ticket Identifier</p>
+<div class="flex items-center gap-3 mt-1">
+<span class="font-display text-[32px] text-primary tracking-tight font-serif" id="ticket-id">#WW-8924</span>
+<button class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm transition-all flex items-center gap-1" onclick="copyTicketId()" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span id="copy-btn-label">Copy ID</span>
+</button>
+</div>
+</div>
+<div class="text-left sm:text-right">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span>REPORTED — In Algorithmic Triage</span>
+</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5" id="ticket-timestamp">Recorded Just now</p>
+</div>
+</div>
+<!-- Metadata Metrics Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Assigned Department</p>
+<p class="font-title-md text-title-md text-primary" id="ticket-agency">Public Works &amp; Pavement Division</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Supervising Officer: Inspector C. Vance</p>
+</div>
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Mandated SLA Target</p>
+<p class="font-title-md text-title-md text-primary">Resolution within 48 Hours</p>
+<p class="font-body-sm text-body-sm text-secondary font-medium">Auto-escalates on day 3 at 18:00</p>
+</div>
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Geographic Anchor</p>
+<p class="font-title-md text-title-md text-primary" id="ticket-location">742 W Highland Ave (Ward 04)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">GPS: 41.8827° N, 87.6233° W</p>
+</div>
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Cryptographic Signature</p>
+<p class="font-mono text-body-sm text-on-surface-variant truncate">0x9f4a7c1b8924e3...b71c4d</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Indexed to Open Ledger Block #194,821</p>
+</div>
+</div>
+<!-- Triage Life Cycle Steps -->
+<div class="p-6 rounded-DEFAULT bg-surface-container-low space-y-4">
+<p class="font-title-md text-title-md text-primary">What happens next?</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm">1</span>
+<p class="font-label-md text-label-md text-primary">Cluster Match</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">AI verifies no duplicate work order exists within 50 meters.</p>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-label-sm text-label-sm">2</span>
+<p class="font-label-md text-label-md text-primary">Depot Dispatch</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Repair crew queued at Yard 3 with matching asphalt equipment.</p>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-label-sm text-label-sm">3</span>
+<p class="font-label-md text-label-md text-primary">Audit Closeout</p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Completed work photograph posted back to ticket docket for public audit.</p>
+</div>
+</div>
+</div>
+<!-- Post Actions -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4">
+<a class="w-full sm:w-auto px-8 py-3 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-all text-center shadow-md" data-path="live-city" href="#">
+                Track on Live City Map
+              </a>
+<div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+<button class="px-6 py-3 rounded-full bg-surface-container text-primary hover:bg-surface-container-high font-label-md text-label-md transition-all text-center" onclick="resetReportingForm()" type="button">
+                  Submit Another Report
+                </button>
+<a class="px-6 py-3 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-primary font-label-md text-label-md transition-all text-center" data-path="platform" href="#">
+                  Back to Platform
+                </a>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<!-- Toast Notification element -->
+<div class="fixed bottom-8 right-8 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-primary text-on-primary px-5 py-3 rounded-full shadow-2xl flex items-center gap-2.5" id="toast-notification">
+<span class="material-symbols-outlined text-[20px] text-surface-bright" id="toast-icon">check_circle</span>
+<span class="font-label-md text-label-md" id="toast-text">Ticket ID copied to clipboard</span>
+</div>
+</div>
+<script>
+  // State Store
+  const reportState = {
+    currentStep: 1,
+    category: 'Potholes',
+    categoryDesc: 'Road surface cavities, asphalt collapse, rutting',
+    agency: 'Public Works (Roads)',
+    title: 'Deep pavement crater in eastbound transit corridor',
+    description: 'Severe asphalt deterioration approximately 35cm deep located near the Highland pedestrian crosswalk. Poses serious hazard to cyclists and bus suspensions during morning rush.',
+    severity: 'Medium',
+    dateObserved: new Date().toISOString().split('T')[0],
+    timeWindow: 'Afternoon (12:00 - 18:00)',
+    address: '742 West Highland Ave, Ward 04',
+    coordinates: '41.8827° N, 87.6233° W',
+    ward: 'Ward 04 — Central Civic',
+    alderperson: 'Elena Rostova (District 04)',
+    privacy: 'public',
+    photosCount: 2,
+    ticketId: '#WW-8924'
+  };
+
+  // Lifecycle Initialization
+  document.addEventListener('DOMContentLoaded', () => {
+    // Set default date picker
+    const dateInput = document.getElementById('date-observed');
+    if (dateInput) {
+      dateInput.value = reportState.dateObserved;
+    }
+
+    // Load initial form bindings
+    const titleInput = document.getElementById('issue-title');
+    if (titleInput) {
+      titleInput.value = reportState.title;
+      document.getElementById('title-count').textContent = reportState.title.length;
+    }
+
+    const descInput = document.getElementById('issue-desc');
+    if (descInput) {
+      descInput.value = reportState.description;
+      document.getElementById('desc-count').textContent = reportState.description.length;
+    }
+
+    // Set active category card visually
+    highlightCategoryCard(reportState.category);
+  });
+
+  // Step Navigation Engine
+  function goToStep(stepNumber) {
+    if (stepNumber < 1 || stepNumber > 5) return;
+
+    // Hide all step views
+    for (let i = 1; i <= 5; i++) {
+      const view = document.getElementById(`step-view-${i}`);
+      if (view) view.classList.add('hidden');
+    }
+
+    // Show target step
+    const target = document.getElementById(`step-view-${stepNumber}`);
+    if (target) target.classList.remove('hidden');
+
+    reportState.currentStep = stepNumber;
+    updateStepperUI(stepNumber);
+    updateReviewContent();
+    window.scrollTo({ top: 120, behavior: 'smooth' });
+  }
+
+  function updateStepperUI(activeStep) {
+    for (let i = 1; i <= 5; i++) {
+      const btn = document.getElementById(`step-nav-${i}`);
+      const badge = document.getElementById(`step-badge-${i}`);
+      const line = document.getElementById(`line-${i}`);
+
+      if (!btn) continue;
+
+      if (i < activeStep) {
+        // Completed
+        btn.className = 'step-nav-btn flex items-center gap-2 px-4 py-2 rounded-full transition-all bg-surface-container text-primary font-bold';
+        badge.innerHTML = '<span class="material-symbols-outlined text-[14px]">check</span>';
+        badge.className = 'w-5 h-5 rounded-full flex items-center justify-center text-label-sm font-label-sm bg-primary text-on-primary';
+        if (line) line.className = 'h-0.5 flex-1 min-w-4 bg-primary transition-all';
+      } else if (i === activeStep) {
+        // Active
+        btn.className = 'step-nav-btn flex items-center gap-2 px-4 py-2 rounded-full transition-all bg-primary text-on-primary';
+        badge.textContent = i;
+        badge.className = 'w-5 h-5 rounded-full flex items-center justify-center text-label-sm font-label-sm bg-surface-container-lowest text-primary';
+        if (line) line.className = 'h-0.5 flex-1 min-w-4 bg-surface-container-high transition-all';
+      } else {
+        // Future
+        btn.className = 'step-nav-btn flex items-center gap-2 px-4 py-2 rounded-full transition-all text-on-surface-variant hover:bg-surface-container-low';
+        badge.textContent = i;
+        badge.className = 'w-5 h-5 rounded-full flex items-center justify-center text-label-sm font-label-sm bg-surface-container text-on-surface';
+        if (line) line.className = 'h-0.5 flex-1 min-w-4 bg-surface-container-high transition-all';
+      }
+    }
+  }
+
+  // Step 1: Category Selection
+  function selectCategory(catName, desc, iconName, agency) {
+    reportState.category = catName;
+    reportState.categoryDesc = desc;
+    reportState.agency = agency;
+
+    highlightCategoryCard(catName);
+
+    const notice = document.getElementById('cat-selection-notice');
+    if (notice) {
+      notice.innerHTML = `<span class="text-primary font-semibold">Selected:</span> ${catName} — Allocated to <em>${agency}</em>`;
+    }
+
+    const step2Pill = document.getElementById('step2-cat-name');
+    if (step2Pill) step2Pill.textContent = catName;
+  }
+
+  function highlightCategoryCard(catName) {
+    const cards = document.querySelectorAll('.cat-card');
+    cards.forEach(card => {
+      if (card.getAttribute('data-cat') === catName) {
+        card.classList.add('ring-2', 'ring-primary', 'bg-surface-container-low');
+        card.classList.remove('bg-surface-container-lowest');
+      } else {
+        card.classList.remove('ring-2', 'ring-primary', 'bg-surface-container-low');
+        card.classList.add('bg-surface-container-lowest');
+      }
+    });
+  }
+
+  function validateStep1() {
+    if (!reportState.category) {
+      showToast('Please select an issue category', 'warning');
+      return;
+    }
+    goToStep(2);
+  }
+
+  // Step 2: Form Input Handlers
+  function handleTitleInput(el) {
+    reportState.title = el.value;
+    document.getElementById('title-count').textContent = el.value.length;
+    if (el.value.trim().length >= 6) {
+      document.getElementById('title-error').classList.add('hidden');
+    }
+  }
+
+  function handleDescInput(el) {
+    reportState.description = el.value;
+    document.getElementById('desc-count').textContent = el.value.length;
+    if (el.value.trim().length >= 20) {
+      document.getElementById('desc-error').classList.add('hidden');
+    }
+  }
+
+  function selectSeverity(level, hint, colorClass) {
+    reportState.severity = level;
+    const buttons = document.querySelectorAll('.sev-btn');
+    buttons.forEach(btn => {
+      if (btn.getAttribute('data-sev') === level) {
+        btn.classList.add('bg-surface-container', 'ring-1', 'ring-primary/20');
+        btn.classList.remove('bg-surface-container-low');
+      } else {
+        btn.classList.remove('bg-surface-container', 'ring-1', 'ring-primary/20');
+        btn.classList.add('bg-surface-container-low');
+      }
+    });
+  }
+
+  function validateStep2() {
+    const titleVal = document.getElementById('issue-title').value.trim();
+    const descVal = document.getElementById('issue-desc').value.trim();
+    const titleErr = document.getElementById('title-error');
+    const descErr = document.getElementById('desc-error');
+
+    let valid = true;
+    if (titleVal.length < 6) {
+      titleErr.classList.remove('hidden');
+      valid = false;
+    } else {
+      titleErr.classList.add('hidden');
+    }
+
+    if (descVal.length < 20) {
+      descErr.classList.remove('hidden');
+      valid = false;
+    } else {
+      descErr.classList.add('hidden');
+    }
+
+    if (!valid) return;
+
+    reportState.title = titleVal;
+    reportState.description = descVal;
+    reportState.dateObserved = document.getElementById('date-observed').value;
+    reportState.timeWindow = document.getElementById('time-window').value;
+
+    goToStep(3);
+  }
+
+  // Step 3: Photos Management
+  function simulateFileUpload() {
+    const fileInput = document.getElementById('file-input');
+    if (fileInput) fileInput.click();
+  }
+
+  function handleFileSelection(event) {
+    const files = event.target.files;
+    if (!files || files.length === 0) return;
+
+    const grid = document.getElementById('photo-preview-grid');
+    for (let i = 0; i < files.length; i++) {
+      if (reportState.photosCount >= 4) {
+        showToast('Maximum 4 photos allowed', 'info');
+        break;
+      }
+      const file = files[i];
+      const newCard = document.createElement('div');
+      newCard.className = 'photo-preview-card relative rounded-DEFAULT overflow-hidden group shadow-sm bg-surface-container-low';
+      newCard.setAttribute('data-filename', file.name);
+      newCard.innerHTML = `
+        <div class="h-44 w-full bg-cover bg-center flex items-center justify-center bg-surface-container-highest">
+          <span class="material-symbols-outlined text-[40px] text-primary">image</span>
+        </div>
+        <div class="p-3 bg-surface-container-lowest">
+          <p class="font-label-md text-label-md text-primary truncate">${file.name}</p>
+          <p class="font-label-sm text-label-sm text-on-surface-variant">${(file.size / (1024 * 1024)).toFixed(1)} MB • Uploaded</p>
+        </div>
+        <button type="button" onclick="removePhoto(this)" class="absolute top-2 right-2 w-7 h-7 rounded-full bg-primary/80 hover:bg-error text-on-primary flex items-center justify-center transition-all opacity-80 group-hover:opacity-100">
+          <span class="material-symbols-outlined text-[16px]">close</span>
+        </button>
+      `;
+      grid.appendChild(newCard);
+      reportState.photosCount++;
+    }
+    updatePhotoBadges();
+  }
+
+  function removePhoto(btn) {
+    const card = btn.closest('.photo-preview-card');
+    if (card) {
+      card.remove();
+      reportState.photosCount = Math.max(0, reportState.photosCount - 1);
+      updatePhotoBadges();
+    }
+  }
+
+  function clearAllPhotos() {
+    const grid = document.getElementById('photo-preview-grid');
+    if (grid) grid.innerHTML = '';
+    reportState.photosCount = 0;
+    updatePhotoBadges();
+  }
+
+  function updatePhotoBadges() {
+    const counter = document.getElementById('photo-counter');
+    const badge = document.getElementById('photo-count-badge');
+    if (counter) counter.textContent = reportState.photosCount;
+    if (badge) badge.textContent = `${reportState.photosCount} Attached`;
+  }
+
+  function validateStep3() {
+    // Photos are optional but encouraged
+    goToStep(4);
+  }
+
+  // Step 4: Map & Geolocation Simulation
+  function handleMapClick(event) {
+    const rect = event.currentTarget.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+
+    const pin = document.getElementById('map-pin');
+    if (pin) {
+      pin.style.left = `${x}px`;
+      pin.style.top = `${y}px`;
+    }
+
+    // Dynamic coordinates perturbation simulation
+    const lat = (41.8827 + (Math.random() - 0.5) * 0.005).toFixed(4);
+    const lng = (87.6233 + (Math.random() - 0.5) * 0.005).toFixed(4);
+    reportState.coordinates = `${lat}° N, ${lng}° W`;
+
+    document.getElementById('geo-coords').textContent = reportState.coordinates;
+    showToast('GPS Coordinates updated for parcel', 'info');
+  }
+
+  function handleAddressChange(val) {
+    reportState.address = val;
+    const pinLabel = document.getElementById('pin-label');
+    if (pinLabel) pinLabel.textContent = val.split(',')[0] || val;
+  }
+
+  function useCurrentLocation() {
+    showToast('Triangulating device coordinates...', 'info');
+    setTimeout(() => {
+      reportState.address = '810 South Michigan Ave, Ward 04';
+      reportState.coordinates = '41.8719° N, 87.6248° W';
+      
+      const addrInput = document.getElementById('address-input');
+      if (addrInput) addrInput.value = reportState.address;
+      
+      const pinLabel = document.getElementById('pin-label');
+      if (pinLabel) pinLabel.textContent = '810 S Michigan Ave';
+      
+      document.getElementById('geo-coords').textContent = reportState.coordinates;
+      showToast('Accurate GPS lock established: ±1.8m', 'check_circle');
+    }, 700);
+  }
+
+  function zoomMap(delta) {
+    showToast(delta > 0 ? 'Zooming map in (+1 level)' : 'Zooming map out (-1 level)', 'zoom_in');
+  }
+
+  function recenterMap() {
+    const pin = document.getElementById('map-pin');
+    if (pin) {
+      pin.style.left = '50%';
+      pin.style.top = '50%';
+    }
+    showToast('Map recentered on anchor coordinates', 'center_focus_strong');
+  }
+
+  function validateStep4() {
+    const addr = document.getElementById('address-input').value.trim();
+    if (!addr) {
+      showToast('Please provide an address or pin location', 'warning');
+      return;
+    }
+    reportState.address = addr;
+    goToStep(5);
+  }
+
+  // Step 5: Review Synthesis
+  function updateReviewContent() {
+    const catBadge = document.getElementById('review-cat-badge');
+    if (catBadge) catBadge.textContent = reportState.category;
+
+    const sevBadge = document.getElementById('review-sev-badge');
+    if (sevBadge) sevBadge.textContent = `${reportState.severity} Severity`;
+
+    const titleEl = document.getElementById('review-title');
+    if (titleEl) titleEl.textContent = reportState.title;
+
+    const descEl = document.getElementById('review-desc');
+    if (descEl) descEl.textContent = reportState.description;
+
+    const dateEl = document.getElementById('review-date');
+    if (dateEl) dateEl.textContent = `${reportState.dateObserved} • ${reportState.timeWindow.split(' ')[0]}`;
+
+    const agencyEl = document.getElementById('review-agency');
+    if (agencyEl) agencyEl.textContent = reportState.agency;
+
+    const addrEl = document.getElementById('review-address');
+    if (addrEl) addrEl.textContent = reportState.address;
+
+    const coordsEl = document.getElementById('review-coords');
+    if (coordsEl) coordsEl.textContent = `${reportState.coordinates} (${reportState.ward})`;
+  }
+
+  // Final Submission Flow
+  function executeSubmission() {
+    const btn = document.getElementById('submit-report-btn');
+    const btnText = document.getElementById('submit-btn-text');
+    const btnIcon = document.getElementById('submit-btn-icon');
+    const spinner = document.getElementById('submit-spinner');
+
+    // UI Loading state
+    btn.disabled = true;
+    btnText.textContent = 'Allocating & Hashing...';
+    btnIcon.classList.add('hidden');
+    spinner.classList.remove('hidden');
+
+    setTimeout(() => {
+      // Generate randomized ticket ID
+      const randomTicketNum = Math.floor(1000 + Math.random() * 9000);
+      reportState.ticketId = `#WW-${randomTicketNum}`;
+
+      // Populate Success Screen
+      document.getElementById('ticket-id').textContent = reportState.ticketId;
+      document.getElementById('ticket-agency').textContent = reportState.agency;
+      document.getElementById('ticket-location').textContent = `${reportState.address.split(',')[0]} (${reportState.ward.split('—')[0].trim()})`;
+      document.getElementById('ticket-timestamp').textContent = 'Recorded at ' + new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+      // Transition to Success view
+      document.getElementById('step-view-5').classList.add('hidden');
+      document.getElementById('success-screen').classList.remove('hidden');
+
+      // Scroll smoothly to top of success card
+      window.scrollTo({ top: 180, behavior: 'smooth' });
+
+      showToast('Report dispatched and recorded on public ledger', 'task_alt');
+    }, 1200);
+  }
+
+  // Copy Ticket ID Handler
+  function copyTicketId() {
+    navigator.clipboard.writeText(reportState.ticketId).then(() => {
+      const copyLabel = document.getElementById('copy-btn-label');
+      copyLabel.textContent = 'Copied!';
+      showToast(`Complaint ID ${reportState.ticketId} copied to clipboard!`, 'content_copy');
+      setTimeout(() => {
+        copyLabel.textContent = 'Copy ID';
+      }, 2500);
+    }).catch(() => {
+      showToast(`ID: ${reportState.ticketId}`, 'info');
+    });
+  }
+
+  // Reset Engine for subsequent filing
+  function resetReportingForm() {
+    reportState.category = 'Potholes';
+    reportState.title = '';
+    reportState.description = '';
+    reportState.severity = 'Medium';
+    reportState.photosCount = 0;
+
+    const titleIn = document.getElementById('issue-title');
+    if (titleIn) titleIn.value = '';
+
+    const descIn = document.getElementById('issue-desc');
+    if (descIn) descIn.value = '';
+
+    const btn = document.getElementById('submit-report-btn');
+    const btnText = document.getElementById('submit-btn-text');
+    const btnIcon = document.getElementById('submit-btn-icon');
+    const spinner = document.getElementById('submit-spinner');
+    if (btn) btn.disabled = false;
+    if (btnText) btnText.textContent = 'Submit Report';
+    if (btnIcon) btnIcon.classList.remove('hidden');
+    if (spinner) spinner.classList.add('hidden');
+
+    document.getElementById('success-screen').classList.add('hidden');
+    goToStep(1);
+    showToast('New report docket initialized', 'refresh');
+  }
+
+  // Toast Notification Dispatcher
+  function showToast(message, iconName = 'info') {
+    const toast = document.getElementById('toast-notification');
+    const text = document.getElementById('toast-text');
+    const icon = document.getElementById('toast-icon');
+
+    if (!toast || !text || !icon) return;
+
+    text.textContent = message;
+    icon.textContent = iconName;
+
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  }
+</script></main><footer class="w-full bg-surface-container-low pt-space-2xl pb-space-xl mt-space-3xl shadow-[0_-1px_12px_rgba(0,0,0,0.02)]"><div class="max-w-[1380px] mx-auto px-margin lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter lg:gap-gutter-desktop pb-space-2xl"><div class="md:col-span-5 flex flex-col justify-between pr-space-md"><div class="space-y-space-sm"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">account_balance</span><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary">WARDWISE</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Open municipal telemetry and civic intelligence system engineered for metropolitan governance, participatory oversight, and public auditability.</p></div><div class="mt-space-lg flex items-center gap-space-sm"><span class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>System Telemetry: Nominal</span><span class="font-label-sm text-label-sm text-on-surface-variant">v4.8.2-civic</span></div></div><div class="md:col-span-2 space-y-space-sm"><h4 class="font-label-md text-label-md uppercase tracking-wider text-primary">Civic Framework</h4><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="transparency" href="#">Civic Bylaws</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="transparency" href="#">Public Record Index</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="transparency" href="#">Open Data Charter</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="transparency" href="#">Ethics &amp; Compliance</a></li></ul></div><div class="md:col-span-2 space-y-space-sm"><h4 class="font-label-md text-label-md uppercase tracking-wider text-primary">Metropolitan</h4><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="live-city" href="#">Ward Status Map</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="platform" href="#">Infrastructure Grid</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="report-an-issue" href="#">Direct Reporting</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="how-it-works" href="#">Agency Dispatch</a></li></ul></div><div class="md:col-span-3 space-y-space-sm"><h4 class="font-label-md text-label-md uppercase tracking-wider text-primary">Municipal Ledger</h4><p class="font-body-sm text-body-sm text-on-surface-variant">All civil inquiries and submitted reports are cryptographically hashed and indexed to the decentralized public registry under Municipal Code § 14-802.</p><div class="pt-space-xs"><span class="inline-block px-space-md py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">Status: 42 Wards Synchronized</span></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 Wardwise Metropolitan Authority. Published under open public domain licensing.</p><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="bylaws" href="#">Municipal Bylaws</a></div></div></div></footer></body></html>
