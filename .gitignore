@@ -4,5 +4,13 @@ dist/
 coverage/
 .DS_Store
 *.log
-.env*
-!.env.example
+# Keep .env.example but not actual env files
+.env.local
+.env.production
+# Keep .env for local dev (has no real secrets except demo passwords)
+# data/uploads is generated at runtime
+data/uploads/
+# temp files
+*.tmp
+
+.env

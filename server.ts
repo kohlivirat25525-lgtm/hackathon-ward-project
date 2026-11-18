@@ -23,7 +23,8 @@ import {
   processSlaEscalations,
   routeComplaint,
 } from './server/engine.ts';
-import { getDatabase, saveDatabase, UPLOADS_DIR } from './server/store.ts';
+import { getDatabase, initDatabase, saveDatabase, UPLOADS_DIR } from './server/store.ts';
+import { uploadEvidenceToSupabase } from './server/supabase.ts';
 import {
   broadcastAdminEvent,
   broadcastPublicEvent,
@@ -165,7 +166,7 @@ async function startServer() {
   app.use(express.json({ limit: '12mb' }));
 
   // Serve uploaded evidence & citizen photos
-  getDatabase(); // Ensure DB & uploads dir initialized
+  await initDatabase(); // Ensure DB & uploads dir initialized, sync with Supabase
   app.use('/uploads', express.static(UPLOADS_DIR));
 
   // Periodic background SLA sweep (every 60s)
@@ -328,7 +329,7 @@ async function startServer() {
   // =========================================================
   // IMAGE UPLOAD ROUTE
   // =========================================================
-  app.post('/api/uploads', (req: Request, res: Response) => {
+  app.post('/api/uploads', async (req: Request, res: Response) => {
     try {
       const { dataUrl, filename } = req.body as { dataUrl?: string; filename?: string };
       if (!dataUrl || typeof dataUrl !== 'string') {
@@ -345,6 +346,13 @@ async function startServer() {
       }
       const safeBase = (filename || 'evidence').replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 24) || 'evidence';
       const outName = `${safeBase}-${Date.now()}-${Math.floor(Math.random() * 1000)}.${ext}`;
+
+      const mimeType = ext === 'jpg' || ext === 'jpeg' ? 'image/jpeg' : `image/${ext}`;
+      const supabaseUrl = await uploadEvidenceToSupabase(outName, buffer, mimeType);
+      if (supabaseUrl) {
+        return res.json({ url: supabaseUrl });
+      }
+
       fs.writeFileSync(path.join(UPLOADS_DIR, outName), buffer);
       res.json({ url: `/uploads/${outName}` });
     } catch (err) {
@@ -397,8 +405,8 @@ async function startServer() {
       windowMode === '30d'
         ? db.monthlyPerformance.slice(-4)
         : windowMode === 'qtd'
-        ? db.monthlyPerformance.slice(-6)
-        : db.monthlyPerformance;
+          ? db.monthlyPerformance.slice(-6)
+          : db.monthlyPerformance;
 
     const avgCompliance =
       leaderboard.length > 0
@@ -503,8 +511,8 @@ async function startServer() {
     const cleanPhotos = Array.isArray(photoUrls)
       ? photoUrls.filter((u) => typeof u === 'string' && u.length > 0).slice(0, 4)
       : photoUrl
-      ? [photoUrl]
-      : [];
+        ? [photoUrl]
+        : [];
     const primaryPhoto = cleanPhotos[0] || photoUrl || null;
 
     const complaint: Complaint = {
@@ -597,9 +605,8 @@ async function startServer() {
         id: `notif-dup-${Date.now()}`,
         recipientRole: 'Supervisor',
         title: `Duplicate Match Found · #${complaint.id}`,
-        message: `New report #${complaint.id} matches existing issue #${
-          candidates[0].primaryId === complaint.id ? candidates[0].secondaryId : candidates[0].primaryId
-        } (${candidates[0].confidenceScore}% confidence).`,
+        message: `New report #${complaint.id} matches existing issue #${candidates[0].primaryId === complaint.id ? candidates[0].secondaryId : candidates[0].primaryId
+          } (${candidates[0].confidenceScore}% confidence).`,
         complaintId: complaint.id,
         createdAt: new Date().toISOString(),
         read: false,
